@@ -16,14 +16,19 @@
   <div class="containerBackground"></div>
 
 
-    <div class="containerMain">
+  <div class="containerMain">
+    <div class="logoWrapper">
+      <div class="logo"></div>
+    </div>
     <% if params[:controller] == 'admins' %>
       <%= render 'layouts/intro' %>
       <% else %>  
       <%= render 'layouts/header' %>
     <% end %>
     <%= yield %>
-    </div>
+    <div class="texture"></div>
+    
+  </div>
 
 
     <!--! <p>

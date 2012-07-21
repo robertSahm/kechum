@@ -344,11 +344,26 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: url(backgroundMain.jpg) no-repeat center center fixed; 
+	background: url(backgroundMainClean.png) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+
+}
+
+.texture {
+    overflow: hidden;
+	min-height: 100%;
+	min-width: 400px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url(texture.png); 
+	opacity: .4;
+	z-index: 100;
 
 }
 
@@ -359,6 +374,20 @@ body {
 	}
 }
 
+.logoWrapper {
+	position: fixed;
+	margin: -2px 0 0 -37px;
+	height: 220px;
+	width: 350px;
+	z-index: 101;
+
+	.logo {
+		height: 100%;
+		width: 100%;
+		background-image: url(logoFlake.png);
+		opacity: .83;
+	}
+}
 
 
 .containerMain {
@@ -368,26 +397,16 @@ body {
 	margin: 0 auto;
 	border: 1px solid black;
 
-	.logoWrapper {
-		margin: -2px 0 0 -37px;
-		height: 220px;
-		width: 350px;
-	
-		.logo {
-			height: 100%;
-			width: 100%;
-			background-image: url(logoFlake.png);
-		}
-	}
-
 	.navBackground {
 		background-image: url(backgroundNavDirty.gif);
 		background-repeat: no-repeat;
 		width: 1181px;
 		height: 489px;
 		position: relative;
-		top: -87px;
+		top: 133px;
 		left: -80px;
+		z-index: 101;
+
 	}
 
 	.headerWrapper {

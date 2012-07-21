@@ -14,16 +14,17 @@
 <body>
 
   <div class="container">
-    <% if params[:controller] == 'admins' %>
-      <%= render 'layouts/intro' %>
-    <% else %>  
-      <%= render 'layouts/header' %>
-    <% end %>
-    <div class="container containerMain">
+    <div class="containerMain">
+      <% if params[:controller] == 'admins' %>
+        <%= render 'layouts/intro' %>
+        <% else %>  
+        <%= render 'layouts/header' %>
+      <% end %>
+
       <%= yield %>
     </div>
   </div>
-<!--
+
     <p>
       <% if mobile_device? %>
         <%= link_to "Full Site", :mobile => 0 %>

@@ -13,32 +13,30 @@
 </head>
 <body>
 
-  <div class="container">
+  <div class="containerBackground"></div>
+
+
     <div class="containerMain">
-      <% if params[:controller] == 'admins' %>
-        <%= render 'layouts/intro' %>
-        <% else %>  
-        <%= render 'layouts/header' %>
-      <% end %>
-
-      <%= yield %>
+    <% if params[:controller] == 'admins' %>
+      <%= render 'layouts/intro' %>
+      <% else %>  
+      <%= render 'layouts/header' %>
+    <% end %>
+    <%= yield %>
     </div>
-  </div>
 
-    <p>
+
+    <!--! <p>
       <% if mobile_device? %>
         <%= link_to "Full Site", :mobile => 0 %>
       <% else %>
         <%= link_to "Mobile Site", :mobile => 1 %>
       <% end %>
-    </p>-->
+    </p> -->
 
     <% if params[:controller] != 'admins' %>
       <%#= render 'layouts/footer' %>
     <% end %>
 
-  </div>
-
 </body>
-
 </html>

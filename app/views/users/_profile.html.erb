@@ -1,0 +1,15 @@
+
+<%= simple_form_for(@user) do |f| %>
+  <%= f.error_notification %>
+  <%= render 'shared/error_messages' %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.input :photo_url %>
+  </div>
+
+    <%= f.submit "Update Account", :class => "btn btn-large btn-primary" %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                                            @user, :class => 'btn btn' %>
+<% end %>

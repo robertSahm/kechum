@@ -1,0 +1,367 @@
+@import "twitter/bootstrap";
+// import responsive layout
+@import "twitter/bootstrap/responsive";
+// Set the correct sprite paths
+//@iconSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings.png');
+//@iconWhiteSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings-white.png');
+@navbarBackground: #555;
+@navbarBackgroundHighlight: #888;
+@navbarText: #eee;
+@navbarLinkColor: #eee;
+@bodyBackground: #eee;
+@navbarHeight: 60px;
+@navbarLinkBackgroundHover: transparent;
+.navbar .brand {
+  color: #FAFFB8;
+}
+ul {
+	list-style-type: none;
+}
+/* forms */
+input, textarea, select, .uneditable-input {
+	border: 1px solid #bbb;
+	width: 100%;
+	padding: 10px;
+	height: 50px;
+	margin-bottom: 15px;
+	/* @include box_sizing; */
+}
+#error_explanation {
+	color:#f00;
+	ul {
+		list-style: none;
+		margin: 0 0 18px 0;
+	}
+}
+/* sidebar */
+.stats {
+	overflow: auto;
+	a {
+	float: left;
+	padding: 0 10px;
+	border-left: 1px solid @grayLighter;
+	color: gray;
+		&:first-child {
+			padding-left: 0;
+			border: 0;
+		}
+		&:hover {
+			text-decoration: none;
+			color: #33f;
+		}
+	}
+	strong {
+		display: block;
+	}
+}
+.user_avatars {
+	overflow: auto;
+	margin-top: 10px;
+	.gravatar {
+		margin: 1px 1px;
+	}
+}
+
+.gravatar {
+	width: 80px;
+	height: 80px;
+}
+
+.files-bins {
+	border : 3px solid #aaa;
+}
+
+.vertical {
+	width : 180px;
+	padding: 20px;
+}
+
+.box {
+	border : 2px solid grey;
+	height : 400px;
+}
+
+.timeline {
+	border : 2px solid grey;
+	height : 50px;
+}
+.overlay {
+	border : 2px dotted black;
+	width : 100px;
+	height : 400px;
+	position: fixed;
+	top : 200px;
+	left : 900px;
+}
+/* microposts */
+.microposts {
+	list-style: none;
+	height: 150px;
+	margin: 10px 0 10px 0;
+	li {
+		padding: 25px 0;
+		border-top: 1px solid #e8e8e8;
+	}
+}
+.user {
+	display: block;
+}
+.content {
+	/*display: block;*/
+}
+.timestamp {
+	color: @grayLight;
+	display: block;
+}
+ol.gravatar {
+	a {
+		float: left;
+	}
+}
+.gravatar {
+	padding: 10px;
+	margin-right: 10px;
+}
+aside {
+	textarea {
+		height: 80px;
+		margin-bottom: 5px;
+	}
+}
+/* stats */
+.stats {
+	overflow: auto;
+	a {
+	float: left;
+	padding: 0 10px;
+	border-left: 1px solid @grayLighter;
+	color: gray;
+	&:first-child {
+		padding-left: 0;
+		border: 0;
+		}
+		&:hover {
+		text-decoration: none;
+		color: #33f;
+		}
+	}
+	strong {
+		display: block;
+	}
+}
+.user_avatars {
+	overflow: auto;
+	margin-top: 10px;
+	.gravatar {
+		margin: 1px 1px;
+	}
+}
+
+/*
+                      ___ _ _  _ ____
+                       |  | |\/| |___
+     ...               |  | |  | |___
+  ,'    '.               ___ ____
+  ;       ;               |  |  |
+  |       |               |  |__|
+  |       |         _ _ _ ____ ____ _  _
+  | _, ,_ |         | | | |  | |__/ |_/
+  '´ | | `'         |_|_| |__| |  \ | \_
+     | |    _    _              
+     | |  .|_|_,' |         ,--.
+     | |  |       |        :   |
+     | |  `|`'`-._|        :   |
+     | |   | |             :   |
+     | |   | |             :   |
+     | |   | |  .-------.  :   |
+     | |   | | ,|   _O  |  :   |
+     | |   | | ||_,'    |  :   |
+     | |   | | `|       |  ;...:
+     | |   | |  |       | /.--. \
+     | |  |` |  |       | |'--' |
+     '-'  `--'  '-------' '-----' 
+*/
+
+
+
+/*
+                                                                                     
+                                                                                     
+     ,.-==-.   `7MM"""YMM                  mm     `7MM"""YMM                         
+  ,pd'      `g.  MM    `7                  MM       MM    `7                         
+ ,P   ,dMb.A  Y. MM   d  ,pW"Wq.`7MMpMMMbmmMMmm     MM   d  ,6"Yb.  ,p6"bo   .gP"Ya  
+,P   dP  ,MP  j8 MM""MM 6W'   `Wb MM    MM MM       MM""MM 8)   MM 6M'  OO  ,M'   Yb 
+8:  dM'  dM   d' MM   Y 8M     M8 MM    MM MM mmmmm MM   Y  ,pm9MM 8M       8M"""""" 
+Wb  YML.dML..d'  MM     YA.   ,A9 MM    MM MM       MM     8M   MM YM.    , YM.    , 
+ Wb  ``""^`"'  .JMML.    `Ybmd9'.JMML  JMML`Mbmo  .JMML.   `Moo9^Yo.YMbmd'   `Mbmmd' 
+  `M..     .,!                                                                       
+    `Ybmmd'                                                                          
+*/
+
+@font-face {
+    font-family: 'PrestigeEliteRegular';
+    src: url('fonts/prestige_elite-webfont.eot');
+    src: url('fonts/prestige_elite-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/prestige_elite-webfont.woff') format('woff'),
+         url('fonts/prestige_elite-webfont.ttf') format('truetype'),
+         url('fonts/prestige_elite-webfont.svg#PrestigeEliteRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BeamieRegular';
+    src: url('beamie-webfont.eot');
+    src: url('beamie-webfont.eot?#iefix') format('embedded-opentype'),
+         url('beamie-webfont.woff') format('woff'),
+         url('beamie-webfont.ttf') format('truetype'),
+         url('beamie-webfont.svg#BeamieRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MonacoRegular';
+    src: url('monaco-webfont.eot');
+    src: url('monaco-webfont.eot?#iefix') format('embedded-opentype'),
+         url('monaco-webfont.woff') format('woff'),
+         url('monaco-webfont.ttf') format('truetype'),
+         url('monaco-webfont.svg#MonacoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PrestigeEliteBold';
+    src: url('fonts/prestige_elite_bold-webfont.eot');
+    src: url('fonts/prestige_elite_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/prestige_elite_bold-webfont.woff') format('woff'),
+         url('fonts/prestige_elite_bold-webfont.ttf') format('truetype'),
+         url('fonts/prestige_elite_bold-webfont.svg#PrestigeEliteBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PrestigeEliteBoldSlanted';
+    src: url('fonts/prestige_elite_bold_slanted-webfont.eot');
+    src: url('fonts/prestige_elite_bold_slanted-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/prestige_elite_bold_slanted-webfont.woff') format('woff'),
+         url('fonts/prestige_elite_bold_slanted-webfont.ttf') format('truetype'),
+         url('fonts/prestige_elite_bold_slanted-webfont.svg#PrestigeEliteBoldSlanted') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PrestigeEliteSlanted';
+    src: url('fonts/prestige_elite_slanted-webfont.eot');
+    src: url('fonts/prestige_elite_slanted-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/prestige_elite_slanted-webfont.woff') format('woff'),
+         url('fonts/prestige_elite_slanted-webfont.ttf') format('truetype'),
+         url('fonts/prestige_elite_slanted-webfont.svg#PrestigeEliteSlanted') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+                                                                                  
+/*                     ,,                                                           
+  .g8"""bgd        `7MM                      `7MMF'   `7MF'                       
+.dP'     `M          MM                        `MA     ,V                         
+dM'       ` ,pW"Wq.  MM  ,pW"Wq.`7Mb,od8        VM:   ,V ,6"Yb.  `7Mb,od8 ,pP"Ybd 
+MM         6W'   `Wb MM 6W'   `Wb MM' "'         MM.  M'8)   MM    MM' "' 8I   `" 
+MM.        8M     M8 MM 8M     M8 MM             `MM A'  ,pm9MM    MM     `YMMMa. 
+`Mb.     ,'YA.   ,A9 MM YA.   ,A9 MM              :MM;  8M   MM    MM     L.   I8 
+  `"bmmmd'  `Ybmd9'.JMML.`Ybmd9'.JMML.             VF   `Moo9^Yo..JMML.   M9mmmP' 
+*/ 
+
+@blueText: #005A7E;
+
+
+/*                                                            
+                                                                                                                                                                       ,,                
+MMP""MM""YMM                                                              `7MM                
+P'   MM   `7                                                                MM                
+     MM `7M'   `MF`7MMpdMAo.  ,pW"Wq.   .P"Ybmmm `7Mb,od8 ,6"Yb. `7MMpdMAo. MMpMMMb`7M'   `MF'
+     MM   VA   ,V   MM   `Wb 6W'   `Wb :MI  I8     MM' "'8)   MM   MM   `Wb MM    MM VA   ,V  
+     MM    VA ,V    MM    M8 8M     M8  WmmmP"     MM     ,pm9MM   MM    M8 MM    MM  VA ,V   
+     MM     VVV     MM   ,AP YA.   ,A9 8M          MM    8M   MM   MM   ,AP MM    MM   VVV    
+   .JMML.   ,V      MMbmmd'   `Ybmd9'   YMMMMMb  .JMML.  `Moo9^Yo. MMbmmd'.JMML  JMML. ,V     
+           ,V       MM                 6'     dP                   MM                 ,V      
+        OOb"      .JMML.               Ybmmmd'                   .JMML.            OOb"     
+
+*/
+
+h1 {
+	font-family: 'PrestigeEliteRegular', serif;
+	//color: @blueText;
+	font-weight: normal;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+    
+h5 {
+
+}   
+
+h6 {
+
+}                                                                          
+
+
+body {
+	margin-top: 100px;
+}
+
+
+
+.containerMain { // yield everything
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

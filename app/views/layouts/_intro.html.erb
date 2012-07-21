@@ -1,0 +1,17 @@
+<% flash.each do |name, msg| %>
+  <div class="alert alert-<%= name == :notice ? 'success' : 'error' %>">
+    <a class="close" data-dismiss="alert" href="#">×</a>
+    <%= msg %>
+  </div>
+<% end %>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to image_tag("clapboard-icon.jpg"), root_path, {:class => "brand"} %>
+      <div class="nav-collapse">
+      <ul class="nav pull-right">
+         </ul> 
+      </div>
+    </div>
+  </div>
+</div>

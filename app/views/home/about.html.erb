@@ -1,0 +1,12 @@
+<div class="center hero-unit">
+  <div class="row">
+    <h1>Welcome to <%= PAGE_NAME %></h1>
+    <h2>
+      <%= PAGE_NAME %> is a Festival Video game to be played by festival goers
+
+    </h2>
+    <% if !signed_in? %>
+      <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+    <%  end %>
+  </div>
+</div>

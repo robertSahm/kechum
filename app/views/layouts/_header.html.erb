@@ -3,6 +3,9 @@
 
 <div class="navWrapper">
   <div class="navBackground"></div>
+  
+</div>
+
   <div class="headerWrapper">
     <ul class="">
       <li><%= link_to "home", home_path %></li> 
@@ -12,62 +15,8 @@
       <li><%= link_to "client", client_path %></li>
     </ul>
   </div>
-</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--!
 <% flash.each do |name, msg| %>
   <div class="alert alert-<%= name == :notice ? 'success' : 'error' %>">
     <a class="close" data-dismiss="alert" href="#">×</a>
@@ -83,7 +32,7 @@
         <span class="icon-bar"></span>
       </a>
       <div class="nav-collapse">
-        <% if signed_in? %>
+        <% if # signed_in? %>
         <ul class="nav">
           <li><%= link_to "home", home_path %></li> 
           <li><%= link_to "the work", work_path %></li>

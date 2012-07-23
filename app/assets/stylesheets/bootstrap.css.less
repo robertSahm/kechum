@@ -339,16 +339,13 @@ body {
     overflow: hidden;
 	min-height: 100%;
 	min-width: 400px;
-	width: 100%;
-	height: auto;
+	width: 1900px;
+	height: 96px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: url(backgroundMainClean.png) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: url(backgroundTile.jpg) repeat fixed; 
+
 
 }
 
@@ -363,7 +360,7 @@ body {
 	left: 0;
 	background: url(texture.png); 
 	opacity: .4;
-	z-index: 100;
+	//z-index: 100;
 
 }
 
@@ -374,7 +371,10 @@ body {
 	}
 }
 
+
+
 .logoWrapper {
+	//display: none;
 	position: fixed;
 	margin: -2px 0 0 -37px;
 	height: 220px;
@@ -385,7 +385,7 @@ body {
 		height: 100%;
 		width: 100%;
 		background-image: url(logoFlake.png);
-		opacity: .83;
+		//opacity: .83;
 	}
 }
 
@@ -395,7 +395,17 @@ body {
 	width: 1200px;
 	height: 900px;
 	margin: 0 auto;
-	border: 1px solid black;
+	//border: 1px solid black;
+	z-index: 101;
+
+	.leftCorner {
+		background: url(leftCorner.png); 
+		position: absolute;
+		top: 0;
+		left: -460px;
+		width: 1023px;
+		height: 1023px;
+	}	
 
 	.navBackground {
 		background-image: url(backgroundNavDirty.gif);
@@ -404,9 +414,8 @@ body {
 		height: 489px;
 		position: relative;
 		top: 133px;
-		left: -80px;
+		left: -185px;
 		z-index: 101;
-
 	}
 
 	.headerWrapper {

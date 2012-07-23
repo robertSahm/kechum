@@ -20,13 +20,17 @@
     <div class="logoWrapper">
       <div class="logo"></div>
     </div>
+    <div class="leftCornerWrapper">
+      <div class="leftCorner"></div>
+      <div class="texture"></div>
+    </div>
     <% if params[:controller] == 'admins' %>
       <%= render 'layouts/intro' %>
       <% else %>  
       <%= render 'layouts/header' %>
     <% end %>
     <%= yield %>
-    <div class="texture"></div>
+    
     
   </div>
 

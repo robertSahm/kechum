@@ -345,8 +345,6 @@ body {
 	top: 0;
 	left: 0;
 	background: url(backgroundTile.jpg) repeat fixed; 
-
-
 }
 
 .texture {
@@ -361,7 +359,6 @@ body {
 	background: url(texture.png); 
 	opacity: .4;
 	//z-index: 100;
-
 }
 
 @media screen and (max-width: 1200px) { /* Specific to this particular image */
@@ -398,24 +395,53 @@ body {
 	//border: 1px solid black;
 	z-index: 101;
 
-	.leftCorner {
-		background: url(leftCorner.png); 
-		position: absolute;
-		top: 0;
-		left: -460px;
-		width: 1023px;
-		height: 1023px;
-	}	
+	.navWrapper {
 
-	.navBackground {
-		background-image: url(backgroundNavDirty.gif);
-		background-repeat: no-repeat;
-		width: 1181px;
-		height: 489px;
-		position: relative;
-		top: 133px;
-		left: -185px;
-		z-index: 101;
+		.navBackground {
+			background-image: url(backgroundNavDirty.gif);
+			background-repeat: no-repeat;
+			width: 1181px;
+			height: 489px;
+			position: relative;
+			top: 133px;
+			left: -185px;
+			z-index: 101;
+		}
+	}
+
+	.leftCornerWrapper {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	
+		.leftCorner {
+			background: url(leftCorner.png); 
+			position: absolute;
+			top: 0;
+			left: -460px;
+			width: 1023px;
+			height: 1023px;
+			//border: 1px solid red;
+		}	
+	
+		.diagramWrapper {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1900px;
+			height: 1080px;
+			opacity: .75;
+	
+			.diagram {
+				background: url(diagram.png); 
+				height: 787px;
+				width: 1019px;
+				position: absolute;
+				top: 281px;
+				left: 242px;
+				z-index: 100;
+			}
+		}
 	}
 
 	.headerWrapper {

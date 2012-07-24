@@ -316,11 +316,13 @@ h2 {
 }
 
 h3 {
-
+	font-family: 'PrestigeEliteBold', monospace;
+	font-weight: normal;
 }
 
 h4 {
-
+	font-family: arial, sans-serif;
+	font-weight: bold;
 }
     
 h5 {
@@ -522,12 +524,41 @@ MM.       8M     M8 MM    MM MM   ,pm9MM 8M        MM
 	
 	.contactWrapper {
 
+		.roundedNav {
+			background-image: url('roundedNav.png');
+			width: 178px;
+			height: 299px;
+			position: absolute;
+			top: 74px;
+			left: 658px;
+			opacity: 1;
+			z-index: 0;
+		}
+		
+		.navTextWrapper {
+			width: 178px;
+			height: 299px;
+			position: absolute;
+			top: 74px;
+			left: 658px;
+			opacity: 1;
+			z-index: 102;
+			padding: 40px 0 0 48px;
+
+			h2 {
+				padding: 0;
+				margin: 0;
+				font-size: 1.15em;
+				line-height: 1.6em;
+			}
+		}
+
 		.contactPaper {
 			background: url(contactPaper.png); 
 			position: absolute;
 			width: 594px;
 			height: 400px;
-			left: 300px;
+			left: 198px;
 			top: 190px;
 		}
 
@@ -537,22 +568,37 @@ MM.       8M     M8 MM    MM MM   ,pm9MM 8M        MM
 			height: 530px;
 			position: absolute;
 			top: 156px;
-			left: 62px;
+			left: -40px;
 		}
 
 		.contactAddress {
 			position: absolute;
-			width: 594px;
-			height: 400px;
-			left: 300px;
-			top: 190px;
+			width: 245px;
+			left: 400px;
+			top: 303px;
+			z-index: 102;
 
-			h1 {
-				display: none;
-
+			h3 {
+				font-size: 17px;
+				font-weight: normal;
+				line-height: 1.22em;
 			}
 		}
 
+		.contactDisclaimer {
+			position: absolute;
+			width: 215px;
+			left: 697px;
+			top: 415px;
+			z-index: 102;
+
+			h4 {
+				font-size: .95em;
+				color: white;
+				line-height: 1.3em;
+				letter-spacing: -.02em;
+			}
+		}
 	}
 }
 

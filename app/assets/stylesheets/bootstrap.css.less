@@ -380,23 +380,36 @@ body {
 	}
 }
 
-.navTextWrapper {
-			width: 178px;
-			height: 299px;
-			position: absolute;
-			top: 74px;
-			left: 658px;
-			opacity: 1;
-			z-index: 102;
-			padding: 40px 0 0 48px;
+// Small right-side nav formatting
 
-			h2 {
-				padding: 0;
-				margin: 0;
-				font-size: 1.15em;
-				line-height: 1.6em;
-			}
-		}
+.navTextWrapper {
+	width: 178px;
+	height: 299px;
+	position: absolute;
+	top: 74px;
+	left: 658px;
+	opacity: 1;
+	z-index: 102;
+	padding: 40px 0 0 48px;
+
+	h2 {
+		padding: 0;
+		margin: 0;
+		font-size: 1.15em;
+		line-height: 1.6em;
+	}
+}
+
+.roundedNav {
+	background-image: url('roundedNav.png');
+	width: 178px;
+	height: 299px;
+	position: absolute;
+	top: 74px;
+	left: 658px;
+	opacity: 1;
+	z-index: 0;
+}
 
 .logoWrapper {
 	//display: none;
@@ -454,24 +467,6 @@ body {
 			top: 128px; //+17
 			left: -181px; //-1
 			z-index: 101;
-		}
-
-		.navTextWrapper {
-			width: 178px;
-			height: 299px;
-			position: absolute;
-			top: 74px;
-			left: 658px;
-			opacity: 1;
-			z-index: 102;
-			padding: 40px 0 0 48px;
-
-			h2 {
-				padding: 0;
-				margin: 0;
-				font-size: 1.15em;
-				line-height: 1.6em;
-			}
 		}
 
 		.greenSlider {
@@ -542,35 +537,6 @@ MM.       8M     M8 MM    MM MM   ,pm9MM 8M        MM
 	
 	.contactWrapper {
 
-		.roundedNav {
-			background-image: url('roundedNav.png');
-			width: 178px;
-			height: 299px;
-			position: absolute;
-			top: 74px;
-			left: 658px;
-			opacity: 1;
-			z-index: 0;
-		}
-
-		.navTextWrapper {
-			width: 178px;
-			height: 299px;
-			position: absolute;
-			top: 74px;
-			left: 658px;
-			opacity: 1;
-			z-index: 102;
-			padding: 40px 0 0 48px;
-
-			h2 {
-				padding: 0;
-				margin: 0;
-				font-size: 1.15em;
-				line-height: 1.6em;
-			}
-		}
-
 		.contactPaper {
 			background: url(contactPaper.png); 
 			position: absolute;
@@ -630,17 +596,6 @@ P'   MM   `7
 */
 
 	.teamWrapper {
-
-		.roundedNav {
-			background-image: url('roundedNav.png');
-			width: 178px;
-			height: 299px;
-			position: absolute;
-			top: 74px;
-			left: 658px;
-			opacity: 1;
-			z-index: 0;
-		}
 
 		.backgroundTeam {
 			background-image: url('backgroundTeam.png');
@@ -719,7 +674,92 @@ P'   MM   `7
 			left: 247px;
 			z-index: 99;
 		}
-	}                                                                             
+	}
+
+/*	              ,,   ,,                          
+  .g8"""bgd `7MM   db                    mm    
+.dP'     `M   MM                         MM    
+dM'       `   MM `7MM  .gP"Ya `7MMpMMMbmmMMmm  
+MM            MM   MM ,M'   Yb  MM    MM MM    
+MM.           MM   MM 8M""""""  MM    MM MM    
+`Mb.     ,'   MM   MM YM.    ,  MM    MM MM    
+  `"bmmmd'  .JMML.JMML.`Mbmmd'.JMML  JMML`Mbmo 
+*/
+
+	.clientWrapper {
+
+		.roundedNav {
+			background-image: url('backgroundNavSmall.png');
+			background-repeat: no-repeat;
+			left: 655px;
+		}
+
+		.logoDrawn {
+			background-image: url('logoDrawn.png');
+			width: 756px;
+			height: 358px;
+			position: absolute;
+			top: 375px;
+			left: 296px;
+			z-index: 98;
+		}
+
+		.radio {
+			background-image: url('radio.png');
+			background-repeat: no-repeat;
+			padding: 0;
+			width: 491px;
+			height: 470px;
+			position: absolute;
+			top: 159px;
+			left: -28px;
+			z-index: 99;
+		}
+
+		.loginHeader {
+			background-image: url('loginHeader.png');
+			background-repeat: no-repeat;
+			width: 315px;
+			height: 83px;
+			position: absolute;
+			top: 242px;
+			left: 463px;
+		}
+
+		.loginWrapper {
+			//width: 334px;
+			//height: 83px;
+			position: absolute;
+			top: 315px;
+			left: 467px;
+			border: 2px dashed black;
+			z-index: 101;
+			padding: 13px 15px 10px 15px;
+
+			h3 {
+				display: block;
+				font-size: 1.3em;
+				margin: 0 0 3px 0;
+				padding: 0;
+				//font-weight: bold;
+
+				input.loginField {
+					float: right;
+					border: 0;
+					margin: 0;
+					padding: 0;
+					background-color: black;
+					width: 198px;
+					height: 25px;
+					border-radius: 0;
+					font-family: 'MonacoRegular', sans-serif;
+					font-weight: normal;
+					color: white;
+					padding-left: 5px;
+				}
+			}
+		}
+	}
 } // End main content wrapper
 
 

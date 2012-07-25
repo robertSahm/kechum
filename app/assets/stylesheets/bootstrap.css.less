@@ -801,26 +801,89 @@ MM.           MM   MM 8M""""""  MM    MM MM
 				float:left;
 				font-size: .9em;
 				margin-right: 30px;
-
-
 			}
 		}
 
-		.videosBorder {
+		.videoBorder {
 			background-image: url('videosBorder.png');
 			width: 1272px;
 			height: 457px;
 			position: absolute;
-			top: 77px;
+			top: 268px;
 			left: -125px;
 			z-index: 105;
+		}
+
+		.videoCanvas {
+			width: 1154px;
+			height: 385px;
+			position: absolute;
+			top: 289px;
+			left: -70px;
+			z-index: 120;
+
+			#container {
+				width: 100%;
+				height: 100%;
+
+				.item {
+					width: 288px;
+					height: 192px;
+				}
+			}
 		}
 	}
 } // End main content wrapper
 
 
 
+.isotope-item {
+  z-index: 2;
+}
 
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
 
 
 

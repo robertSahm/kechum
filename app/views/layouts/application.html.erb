@@ -14,8 +14,6 @@
 <body>
 
   <div class="containerBackground"></div>
-
-
   <div class="containerMain">
     <div class="logoWrapper">
       <div class="logo"><a href=""></a></div>
@@ -33,8 +31,7 @@
       <%= render 'layouts/header' %>
     <% end %>
     <%= yield %>
-    
-    
+    <div class="logoHomeLink"><%= link_to "", home_path %></div>
   </div>
 
 

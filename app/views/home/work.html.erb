@@ -1,9 +1,8 @@
 <div class="workWrapper">
 	<div class="roundedNav"></div>
-	<div class="paperSort"></div>
+	<div class="paperSort videoSelector"></div>
 	<div class="logoDots"></div>
-
-	<div class="checkBoxWrapper">
+	<div class="checkBoxWrapper videoSelector">
 		<div id="filters">
 			<h2><a href="#" data-filter=".film">Film</a></h2>
 			<h2><a href="#" data-filter=".television">Television</a></h2>
@@ -12,9 +11,9 @@
 		</div>
 	</div>
 
-	<div class="videoBorder"></div>
+	<div class="videoBorder videoSelector"></div>
 	
-	<div class="videoCanvas">
+	<div class="videoCanvas videoSelector">
 		<div id="container" class="isotope">
   			<div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
  			<div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
@@ -27,15 +26,43 @@
  			<div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
  			<div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
   			<div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
-  			<div class="item television"><a href="#" class="videoClick"><%= image_tag "swimmer.jpg" %></a></div>
- 			<div class="item television"><a href="#" class="videoClick"><%= image_tag "swimmer.jpg" %></a></div>
+  			<div class="item television"><a href="#" class="videoClick"><%= image_tag"swimmer.jpg" %></a></div>
+ 			<div class="item television"><a href="#" class="videoClick"><%= image_tag"swimmer.jpg" %></a></div>
 		</div>
 	</div>
 
 	<div class="playerWrapper">
+		<div class="videoNav">
+			<h3 class='nextButton'><a href="#" class="nextClick">Next-></a></h2>
+			<h3><a href="#" class="backClick"><-Back</a></h2>
+		</div>
 
-		
-
+		<div class="videoInfo">
+  			<h3 class="title">
+  				<span class="whiteBackground">Project:</span>
+  			</h3>
+  			<h3 class="titleText">
+  				<span class="whiteBackground">The Other Shore</span>
+  			</h3>
+  			<h3 class="networkBrand">
+  				<span class="tanBackground">Network/Brand:</span>
+  			</h3>
+  			<h3 class="networkBrandText">
+  				<span class="tanBackground">Discovery Channel</span>
+  			</h3>
+  			<h3 class="type">
+  				<span class="tanBackground">Type:</span>
+  			</h3>
+  			<h3 class="typeText">
+  				<span class="tanBackground">Documentary</span>
+  			</h3>
+  			<h3 class="director">
+  				<span class="tanBackground">Director:</span>
+  			</h3>
+  			<h3 class="directorText">
+  				<span class="tanBackground">Timothy Wheeler</span>
+  			</h3>
+  		</div>
 	</div>
 
 	<div class="navTextWrapper">
@@ -44,7 +71,8 @@
     	<h2><%= link_to "contact", contact_path %></h2>
     	<h2><%= link_to "client", client_path %></h2>
   	</div>
-</div>
+  	
+</div> <!--! End workWrapper -->
 
 <script>
 

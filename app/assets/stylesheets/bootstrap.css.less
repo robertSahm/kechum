@@ -338,36 +338,28 @@ html {
 }
 
 body {
-
+	
 }
 
 .navbar {
 	display: none;
 }
 
-.body {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	
-}
-
 .containerBackground { 
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-	min-height: 100%;
-	min-width: 1000px;
+	//min-height: 100%;
+	//min-width: 1000px;
 	width: 100%;
-	height: 96px;
-	position: fixed;
+	height: 100%;
+	position: absolute;
 	top: 0;
 	left: 0;
 	background: url(backgroundTile.jpg) repeat fixed; 
-	overflow: hidden;
+	//overflow: hidden;
 }
 
 .texture {
-    overflow: hidden;
 	min-height: 100%;
 	min-width: 400px;
 	width: 100%;
@@ -378,6 +370,7 @@ body {
 	background: url(texture.png); 
 	opacity: .4;
 	z-index: 100;
+	//overflow: hidden;
 }
 
 @media screen and (max-width: 1200px) { /* Specific to this particular image */
@@ -419,7 +412,6 @@ body {
 }
 
 .logoWrapper {
-	//display: none;
 	position: fixed;
 	margin: -2px 0 0 -37px;
 	height: 220px;
@@ -439,7 +431,6 @@ body {
 	width: 1200px;
 	height: 900px;
 	margin: 0 auto;
-	//border: 1px solid black;
 	z-index: 101;
 
 	.navWrapper {
@@ -492,18 +483,17 @@ body {
 	.leftCornerWrapper {
 		width: 100%;
 		height: 100%;
-		left: -135px;
-		position: absolute;
-		overflow: none;
+		left: 0px;
+		top: 0;
+		position: fixed;
 	
 		.leftCorner {
 			background: url(leftCorner.png); 
 			position: absolute;
 			top: 0;
-			left: -460px;
-			width: 1023px;
-			height: 1023px;
-			//border: 1px solid red;
+			left: 0;
+			width: 659px;
+			height: 661px;
 		}	
 	
 		.diagramWrapper {
@@ -513,7 +503,6 @@ body {
 			width: 1900px;
 			height: 1080px;
 			opacity: .75;
-			overflow: hidden;
 	
 			.diagram {
 				background: url(diagram.png); 
@@ -523,7 +512,6 @@ body {
 				top: 281px;
 				left: 242px;
 				z-index: 100;
-				overflow: hidden;
 			}
 		}
 	}
@@ -812,7 +800,6 @@ MM.           MM   MM 8M""""""  MM    MM MM
 		}
 
 		.videoBorder {
-			display: none;
 			background-image: url('videosBorder.png');
 			width: 1272px;
 			height: 457px;
@@ -823,9 +810,7 @@ MM.           MM   MM 8M""""""  MM    MM MM
 		}
 
 		.videoCanvas {
-			display: none;
 			width: 1152px;
-			//width: 100%;
 			height: 384px;
 			position: absolute;
 			top: 289px;
@@ -856,6 +841,7 @@ MM.           MM   MM 8M""""""  MM    MM MM
 		}
 
 		.playerWrapper {
+			display: none;
 			background-image: url('backgroundPlayer.png');
 			background-repeat: none;
 			width: 1068px;
@@ -864,8 +850,89 @@ MM.           MM   MM 8M""""""  MM    MM MM
 			top: 235px;
 			left: 0px;
 			z-index: 150;
+
+			.videoNav {
+				height: 185px;
+				position: absolute;
+				top: 380px;
+				left: 34px;
+
+				.nextButton {
+					margin-bottom: 125px;
+				}
+
+				h3 {
+					font-size: 1.7em;
+	
+					a {
+						color: white;
+						text-shadow: 1px 1px 0px @blueText,
+									 2px 2px 1px @blueText;
+	
+						&:hover {
+							color: white;
+							text-shadow: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.videoInfo {
+			width: 250px;
+			height: 305px;
+			position: absolute;
+			top: 75px;
+			left: 22px;
+			overflow-x: hidden;
+
+			h3 {
+				width: 250px;
+				margin: 5px 0 0 5px;
+			}
+
+			h3.title span, 
+			h3.networkBrand span, 
+			h3.type span, 
+			h3.director span { //titles of sections
+				font-size: .95em;
+				color: black;
+				width: auto;
+				padding: 0 12px 0 8px;
+			}
+
+			h3.titleText span,
+			h3.networkBrandText span,
+			h3.typeText span,
+			h3.directorText span { // text of sections
+				font-size: 1.05em;
+				color: black;
+				width: auto;
+				padding: 3px 12px 2px 8px;
+			}
+
+			span.whiteBackground {
+				background-color: white;
+			}
+
+			span.tanBackground {
+				background-color: #e3cca2;
+			}
 		}
 	}
+
+	.logoHomeLink {	
+
+		a {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: -38px;
+			width: 395px;
+			height: 100px;
+			z-index: 200;
+		}
+	}	
 } // End main content wrapper
 
 

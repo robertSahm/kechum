@@ -5,10 +5,10 @@
 
 	<div class="checkBoxWrapper">
 		<div id="filters">
-			<h2><a href="#" data-filter="*">all</a></h2>
 			<h2><a href="#" data-filter=".film">Film</a></h2>
 			<h2><a href="#" data-filter=".television">Television</a></h2>
 			<h2><a href="#" data-filter=".digital">Digital</a></h2>
+			<h2><a href="#" data-filter="*">all</a></h2>
 		</div>
 	</div>
 
@@ -21,11 +21,16 @@
   			<div class="item film"><%= image_tag "dudes.jpg" %></div>
  			<div class="item film"><%= image_tag "dudes.jpg" %></div>
   			<div class="item film"><%= image_tag "dudes.jpg" %></div>
-  			<div class="item television"><%= image_tag "dudes.jpg" %></div>
- 			<div class="item television"><%= image_tag "dudes.jpg" %></div>
-  			<div class="item digital"><%= image_tag "dudes.jpg" %></div>
-  			<div class="item digital"><%= image_tag "dudes.jpg" %></div>
- 			<div class="item digital"><%= image_tag "dudes.jpg" %></div>
+  			<div class="item television"><%= image_tag "swimmer.jpg" %></div>
+ 			<div class="item television"><%= image_tag "swimmer.jpg" %></div>
+  			<div class="item digital"><%= image_tag "jacket.jpg" %></div>
+  			<div class="item digital"><%= image_tag "jacket.jpg" %></div>
+ 			<div class="item digital"><%= image_tag "jacket.jpg" %></div>
+ 			<div class="item film"><%= image_tag "dudes.jpg" %></div>
+ 			<div class="item film"><%= image_tag "dudes.jpg" %></div>
+  			<div class="item film"><%= image_tag "dudes.jpg" %></div>
+  			<div class="item television"><%= image_tag "swimmer.jpg" %></div>
+ 			<div class="item television"><%= image_tag "swimmer.jpg" %></div>
   			
 		</div>
 	</div>
@@ -42,16 +47,18 @@
 
 var $container = $('#container');
 
-$('#container').isotope({
-  // options
-  itemSelector : '.item',
-  layoutMode : 'fitRows'
-});
-
-$('#filters a').click(function(){
-  var selector = $(this).attr('data-filter');
-  $container.isotope({ filter: selector });
-  return false;
+$container.imagesLoaded( function(){
+	$('#container').isotope({
+	  // options
+	  itemSelector : '.item',
+	  layoutMode : 'fitRows'
+	});
+	
+	$('#filters a').click(function(){
+	  var selector = $(this).attr('data-filter');
+	  $container.isotope({ filter: selector });
+	  return false;
+	});
 });
 
 

@@ -815,13 +815,15 @@ MM.           MM   MM 8M""""""  MM    MM MM
 		}
 
 		.videoCanvas {
-			width: 1154px;
+			width: 1152px;
 			//width: 100%;
-			height: 385px;
+			height: 384px;
 			position: absolute;
 			top: 289px;
 			left: -70px;
 			z-index: 120;
+			overflow: hidden;
+			background-color: black;
 
 			#container {
 				width: 100%;
@@ -830,6 +832,11 @@ MM.           MM   MM 8M""""""  MM    MM MM
 				.item {
 					width: 288px;
 					height: 192px;
+					opacity: 1;
+
+					&:hover {
+						opacity: .4;
+					}
 
 					img {
 						width: 100%;

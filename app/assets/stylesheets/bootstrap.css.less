@@ -816,6 +816,7 @@ MM.           MM   MM 8M""""""  MM    MM MM
 
 		.videoCanvas {
 			width: 1154px;
+			//width: 100%;
 			height: 385px;
 			position: absolute;
 			top: 289px;
@@ -829,6 +830,11 @@ MM.           MM   MM 8M""""""  MM    MM MM
 				.item {
 					width: 288px;
 					height: 192px;
+
+					img {
+						width: 100%;
+						height: 100%;
+					}
 				}
 			}
 		}
@@ -838,12 +844,12 @@ MM.           MM   MM 8M""""""  MM    MM MM
 
 
 .isotope-item {
-  z-index: 2;
+  z-index: 120;
 }
 
 .isotope-hidden.isotope-item {
   pointer-events: none;
-  z-index: 1;
+  z-index: 110;
 }
 
 /**** Isotope CSS3 transitions ****/
@@ -885,7 +891,10 @@ MM.           MM   MM 8M""""""  MM    MM MM
           transition-duration: 0s;
 }
 
-
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
 
 
 

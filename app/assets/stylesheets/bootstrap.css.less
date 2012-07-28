@@ -380,7 +380,16 @@ body {
 	}
 }
 
-// Small right-side nav formatting
+
+/*
+`7MMF'  `7MMF'                                 
+  MM      MM                                   
+  MM      MM  ,pW"Wq.`7MMpMMMb.pMMMb.  .gP"Ya  
+  MMmmmmmmMM 6W'   `Wb MM    MM    MM ,M'   Yb 
+  MM      MM 8M     M8 MM    MM    MM 8M"""""" 
+  MM      MM YA.   ,A9 MM    MM    MM YM.    , 
+.JMML.  .JMML.`Ybmd9'.JMML  JMML  JMML.`Mbmmd' 
+*/
 
 .navTextWrapper {
 	width: 178px;
@@ -397,6 +406,77 @@ body {
 		margin: 0;
 		font-size: 1.15em;
 		line-height: 1.6em;
+	}
+}
+
+.slidersWrapper {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1200px;
+	height: 700px;
+
+	.weatherSlider {
+
+	}
+
+	.contactSlider {
+
+	}
+
+	.teamSlider {
+		display: none;
+		background-image: url('teamBlock.png');
+		position: absolute;
+		left: 0;
+		top: 96px;
+		width: 323px;
+		height: 285px;
+		//z-index: 120px;
+	}
+
+	.clientSlider {
+
+	}
+
+	.filmSlider {
+
+	}
+
+	.televisionSlider {
+
+	}
+
+	.digitalSlider {
+
+	}
+
+	.yardsaleSlider {
+
+	}
+}
+
+.hoverWrapper {
+	width: 100%;
+	height: 700px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	//z-index: 200;
+
+	.teamHover {
+		background-color: black;
+		position: absolute;
+		left: 118px;
+		top: 157px;
+		width: 128px;
+		height: 128px;
+		z-index: 200;
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 }
 
@@ -424,6 +504,15 @@ body {
 		background-image: url(logoFlake.png);
 		//opacity: .83;
 	}
+}
+
+.rotate45 {
+		    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+-webkit-transform: rotate(45deg); /* Safari and Chrome */
+     -o-transform: rotate(45deg); /* Opera */
+   -moz-transform: rotate(45deg); /* Firefox */
+   opacity: .5;
 }
 
 .containerMain {
@@ -662,12 +751,28 @@ P'   MM   `7
 
 		.teamBluePaperFull {
 			background-image: url('teamBluePaperFull.png');
-			width: 668px;
-			height: 335px;
+			background-repeat: no-repeat;
+			width: 637px;
+			//height: 335px;
 			position: absolute;
 			top: 499px;
 			left: 247px;
 			z-index: 99;
+			background-size: 100% 100%;
+			padding: 20px;
+		}
+
+		.tab-content {
+			padding-right: 20px;
+
+			h4 {
+				color: black;
+				font-size: .98em;
+				margin-bottom: 10px;
+				letter-spacing: -.01em;
+				line-height: 1.5em;
+				font-weight: bold;
+			}
 		}
 	}
 
@@ -755,6 +860,7 @@ MM.           MM   MM 8M""""""  MM    MM MM
 			}
 		}
 	}
+
 /*
 `7MMF'     A     `7MF'            `7MM      
   `MA     ,MA     ,V                MM      
@@ -920,37 +1026,43 @@ MM.           MM   MM 8M""""""  MM    MM MM
 			}
 		}
 
-		.playerLongInfoBlocker {
-			position: relative;
-			border: 1px solid red;
-			width: 633px;
-			min-height: 572px;
-			top: 0;
-			left: 313px;
-			z-index: 102;
+		h3.tabTitle {
+				position: absolute;
+				top: 242px;
+				left: 27px;
+				//text-align: center;
+				padding-left: 25px;
+				width: 99px;
+				height: 25px;
+				z-index: 150;
+				font-size: 1em;
+				display: none;
+			}
 
-			h1 {
+		.playerLongInfo {
+			display: none;
+			position: relative;
+			top: 641px;
+			left: 313px;
+			width: 633px;
+			height: 200px;
+			background-image: url('playerLongInfo.png');
+			background-repeat: no-repeat;
+			//background-size: 100% 100%;
+			z-index: 101;
+
+			
+
+			h3.descriptionText {
 				width: 596px;
 				font-size: 1em;
 				color: black;
 				//position: relative;
-				margin-top: 280px;
-				line-height: 1.27em;
-				padding-left: 20px;
+				line-height: 1.58em;
+				padding-left: 35px;
+				padding-bottom: 10px;
+				padding-top: 41px;
 			}
-		}
-
-		.playerLongInfo {
-			position: relative;
-			margin-top: -200px;
-			//bottom: 100px;
-			left: 313px;
-			width: 633px;
-			min-height: 207px;
-			background-image: url('playerLongInfo.jpg');
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-			z-index: 101;
 		}
 	} // end work wrapper
 

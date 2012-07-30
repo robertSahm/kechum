@@ -10,12 +10,9 @@ $(function() {
     $('.playerWrapper, .playerHide').fadeOut(500);
   });
 
-  $('.teamHover').hover(function() {
-    $('.teamBlock').fadeIn(500);
-    $('.teamBlock a').click(function() {
-      $(this).fadeOut(500);
-      $('.teamHover').fadeOut(500);
-    });
+  $('.teamHover').click(function() {
+    $('.teamBlock').toggle(500);
+    
   });
 
 });

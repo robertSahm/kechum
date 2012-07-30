@@ -457,6 +457,18 @@ body {
 	}
 }
 
+.rotate45 {
+		    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+-webkit-transform: rotate(45deg); /* Safari and Chrome */
+     -o-transform: rotate(45deg); /* Opera */
+   -moz-transform: rotate(45deg); /* Firefox */
+}
+
+.hoverHide {
+
+}
+
 .hoverWrapper {
 	width: 100%;
 	height: 700px;
@@ -465,18 +477,130 @@ body {
 	left: 0;
 	//z-index: 200;
 
-	.teamHover {
-		background-color: black;
+	.hoverHide {
+
+	}
+
+	.weatherHover {
 		position: absolute;
-		left: 118px;
-		top: 157px;
-		width: 128px;
-		height: 128px;
+		left: 29px;
+		top: 425px;
+		width: 127px;
+		height: 127px;
 		z-index: 200;
 
 		&:hover {
 			cursor: pointer;
 		}
+	}
+
+	.contactHover {
+		position: absolute;
+		left: 29px;
+		top: 247px;
+		width: 127px;
+		height: 127px;
+		z-index: 200;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.teamHover {
+		position: absolute;
+		left: 119px;
+		top: 157px;
+		width: 127px;
+		height: 127px;
+		z-index: 200;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.clientHover {
+		position: absolute;
+		left: 209px;
+		top: 247px;
+		width: 127px;
+		height: 127px;
+		z-index: 200;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.filmHover {
+		position: absolute;
+		left: 390px;
+		top: 247px;
+		width: 127px;
+		height: 127px;
+		z-index: 200;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.televisionHover {
+		position: absolute;
+		left: 480px;
+		top: 157px;
+		width: 127px;
+		height: 127px;
+		z-index: 200;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.digitalHover {
+		position: absolute;
+		left: 570px;
+		top: 247px;
+		width: 127px;
+		height: 127px;
+		z-index: 200;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.yardsaleHover {
+		position: absolute;
+		left: 751px;
+		top: 425px;
+		width: 127px;
+		height: 127px;
+		z-index: 200;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.hoverImages {
+	width: 100%;
+	height: 700px;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	.teamBlock {
+		display: none;
+		position: absolute;
+		top: 96px;
+		left: 0;
+		width: 323px;
+		height: 285px;
+		z-index: 201;
 	}
 }
 
@@ -504,15 +628,6 @@ body {
 		background-image: url(logoFlake.png);
 		//opacity: .83;
 	}
-}
-
-.rotate45 {
-		    transform: rotate(45deg);
-    -ms-transform: rotate(45deg); /* IE 9 */
--webkit-transform: rotate(45deg); /* Safari and Chrome */
-     -o-transform: rotate(45deg); /* Opera */
-   -moz-transform: rotate(45deg); /* Firefox */
-   opacity: .5;
 }
 
 .containerMain {
@@ -554,18 +669,6 @@ body {
 			top: 128px; //+17
 			left: -181px; //-1
 			z-index: 101;
-		}
-
-		.greenSlider {
-			display: none;
-			position: absolute;
-			top: 278px;
-			left: 181px;
-			background-image: url(pieceGreen.png );
-			width: 273px;
-			height: 215px;
-			z-index: 102;
-
 		}
 	}
 
@@ -848,7 +951,7 @@ MM.           MM   MM 8M""""""  MM    MM MM
 					border: 0;
 					margin: 0;
 					padding: 0;
-					background-color: black;
+		
 					width: 198px;
 					height: 25px;
 					border-radius: 0;
@@ -923,7 +1026,7 @@ MM.           MM   MM 8M""""""  MM    MM MM
 			left: -70px;
 			z-index: 120;
 			overflow: hidden;
-			background-color: black;
+
 
 			#container {
 				width: 100%;

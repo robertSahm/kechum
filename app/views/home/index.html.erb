@@ -3,6 +3,7 @@
   <div class="roundedNav"></div>
   <div class="kids"></div>
   <div class="navBackground"></div>
+  <div class="navLeftBackground"></div>
   <div class="navTextWrapper">
     <h2><%= link_to "the work", work_path %></h2>
     <h2><%= link_to "the team", team_path %></h2>
@@ -12,21 +13,57 @@
 </div>
 
 <div class="hoverWrapper">
-  <div class="weatherHover hoverHide rotate45"></div>
-  <div class="contactHover  hoverHide rotate45"></div>
-  <div class="teamHover hoverHide rotate45"></div>
-  <div class="clientHover hoverHide rotate45"></div>
-  <div class="filmHover hoverHide rotate45"></div>
-  <div class="televisionHover hoverHide rotate45"></div>
-  <div class="digitalHover hoverHide rotate45"></div>
-  <div class="yardsaleHover hoverHide rotate45"></div>
+  <div class="weatherHover hoverSlide rotate45"></div>
+  <div class="contactHover  hoverSlide rotate45"></div>
+  <div class="teamHover hoverSlide rotate45"></div>
+  <div class="clientHover hoverSlide rotate45"></div>
+  <div class="filmHover hoverSlide rotate45"></div>
+  <div class="televisionHover hoverSlide rotate45"></div>
+  <div class="digitalHover hoverSlide rotate45"></div>
+  <div class="yardsaleHover hoverSlide rotate45"></div>
 </div>
 
 <div class="hoverImages">
-  <div class="teamBlock">
+  <div class="teamBlock slideBlock">
     <a href="#"><%= image_tag "teamBlock.png" %></a>
   </div>
+  <div class="televisionBlock slideBlock">
+    <a href="#"><%= image_tag "televisionBlock.png" %></a>
+  </div>
+  <div class="yardsaleBlock slideBlock">
+    <a href="#"><%= image_tag "yardsaleBlock.png" %></a>
+  </div>
+  <div class="weatherBlock slideBlock">
+    <a href="#"><%= image_tag "weatherBlock.png" %></a>
+  </div>
+  <div class="contactBlock slideBlock">
+    <a href="#"><%= image_tag "contactBlock.png" %></a>
+  </div>
+  <div class="clientBlock slideBlock">
+    <a href="#"><%= image_tag "clientBlock.png" %></a>
+  </div>
+  <div class="clientBlocker"><%= image_tag "greenBlocker.png" %></div>
+  <div class="filmBlock slideBlock">
+    <a href="#"><%= image_tag "filmBlock.png" %></a>
+  </div>
+  <div class="filmBlocker"><%= image_tag "greenBlocker.png" %></div>
+  <div class="digitalBlock slideBlock">
+    <a href="#"><%= image_tag "digitalBlock.png" %></a>
+  </div>
+  <div class="digitalBlocker"><%= image_tag "greenBlocker.png" %></div> 
+  <div class="endPanel"></div>
 </div>
+
+<div class="blockShadow contactShadow"></div>
+
+
+    <style>.target { clip-path: url('.maskTeam'); }</style>  
+    <svg:svg height="0">  
+      <svg:clipPath id="c1" clipPathUnits="objectBoundingBox">  
+        <svg:circle cx="0.25" cy="0.25" r="0.25" id="circle"/>  
+        <svg:rect x="0.5" y="0.2" width="0.5" height="0.8"/>  
+      </svg:clipPath>  
+    </svg:svg>  
 
 <div class="slidersWrapper">
   <div class="weatherSlider"></div>

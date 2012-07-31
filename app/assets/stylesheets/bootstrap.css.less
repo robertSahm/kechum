@@ -39,7 +39,7 @@ input, textarea, select, .uneditable-input {
 	a {
 	float: left;
 	padding: 0 10px;
-	border-left: 1px solid @grayLighter;
+	//border-left: 1px solid @grayLighter;
 	color: gray;
 		&:first-child {
 			padding-left: 0;
@@ -68,7 +68,7 @@ input, textarea, select, .uneditable-input {
 }
 
 .files-bins {
-	border : 3px solid #aaa;
+	//border : 3px solid #aaa;
 }
 
 .vertical {
@@ -77,16 +77,16 @@ input, textarea, select, .uneditable-input {
 }
 
 .box {
-	border : 2px solid grey;
+	//border : 2px solid grey;
 	height : 400px;
 }
 
 .timeline {
-	border : 2px solid grey;
+	//border : 2px solid grey;
 	height : 50px;
 }
 .overlay {
-	border : 2px dotted black;
+	//border : 2px dotted black;
 	width : 100px;
 	height : 400px;
 	position: fixed;
@@ -100,7 +100,7 @@ input, textarea, select, .uneditable-input {
 	margin: 10px 0 10px 0;
 	li {
 		padding: 25px 0;
-		border-top: 1px solid #e8e8e8;
+		//border-top: 1px solid #e8e8e8;
 	}
 }
 .user {
@@ -134,7 +134,7 @@ aside {
 	a {
 	float: left;
 	padding: 0 10px;
-	border-left: 1px solid @grayLighter;
+	//border-left: 1px solid @grayLighter;
 	color: gray;
 	&:first-child {
 		padding-left: 0;
@@ -155,6 +155,11 @@ aside {
 	.gravatar {
 		margin: 1px 1px;
 	}
+}
+
+a:focus {
+	outline:none;
+	
 }
 
 /*
@@ -369,8 +374,7 @@ body {
 	left: 0;
 	background: url(texture.png); 
 	opacity: .4;
-	z-index: 100;
-	//overflow: hidden;
+	z-index: 50;
 }
 
 @media screen and (max-width: 1200px) { /* Specific to this particular image */
@@ -433,7 +437,6 @@ body {
 		top: 96px;
 		width: 323px;
 		height: 285px;
-		//z-index: 120px;
 	}
 
 	.clientSlider {
@@ -475,7 +478,6 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	//z-index: 200;
 
 	.hoverHide {
 
@@ -586,6 +588,21 @@ body {
 	}
 }
 
+.blockShadow {
+	background-image: url('blockShadow.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 202px;
+	height: 171px;
+}
+
+.contactShadow {
+	display: none;
+	top: 294px;
+	left: 34px;
+	z-index: 30;
+}
+
 .hoverImages {
 	width: 100%;
 	height: 700px;
@@ -593,14 +610,117 @@ body {
 	top: 0;
 	left: 0;
 
+	//top row
 	.teamBlock {
-		//display: none;
 		position: absolute;
-		top: 123px;
+		top: 124px;
 		left: 87px;
 		width: 323px;
 		height: 285px;
-		z-index: 201;
+		z-index: 31;
+	}
+
+	.televisionBlock {
+		position: absolute;
+		top: 125px;
+		left: 449px;
+		width: 323px;
+		height: 285px;
+		z-index: 36;
+	}
+
+	//middle row
+	.contactBlock {
+		position: absolute;
+		top: 215px;
+		left: -1px;
+		width: 323px;
+		height: 285px;
+		z-index: 29;
+	}
+
+	.clientBlock {
+		position: absolute;
+		top: 215px;
+		left: 178px;
+		width: 323px;
+		height: 285px;
+		z-index: 34;
+	}
+
+	.clientBlocker {
+		position: absolute;
+		width: 184px;
+		height: 181px;
+		top: 307px;
+		left: 270px;
+		z-index: 34;
+	}
+
+	.filmBlock {
+		position: absolute;
+		top: 216px;
+		left: 360px;
+		width: 323px;
+		height: 285px;
+		z-index: 35;
+	}
+
+	.filmBlocker {
+		position: absolute;
+		width: 184px;
+		height: 181px;
+		top: 308px;
+		left: 452px;
+		z-index: 35;
+	}
+
+	.digitalBlock {
+		position: absolute;
+		top: 216px;
+		left: 540px;
+		width: 323px;
+		height: 285px;
+		z-index: 37;
+	}
+
+	.digitalBlocker {
+		position: absolute;
+		width: 184px;
+		height: 181px;
+		top: 308px;
+		left: 632px;
+		z-index: 37;
+	}
+
+	//bottom row
+	.yardsaleBlock {
+		position: absolute;
+		top: 392px;
+		left: 719px;
+		width: 323px;
+		height: 285px;
+		z-index: 38;
+	}
+
+	.weatherBlock {
+		position: absolute;
+		top: 393px;
+		left: -2px;
+		width: 323px;
+		height: 285px;
+		z-index: 29;
+	}
+
+	.endPanel {
+		background-image: url('endPanel.png');
+		repeat: no-repeat;
+		position: absolute;
+		width: 186px;
+		height: 125px;
+		left: 717px;
+		top: 304px;
+		z-index: 38;
 	}
 }
 
@@ -620,7 +740,7 @@ body {
 	margin: -2px 0 0 -37px;
 	height: 220px;
 	width: 350px;
-	z-index: 101;
+	z-index: 50;
 
 	.logo {
 		height: 100%;
@@ -661,14 +781,24 @@ body {
 		}
 
 		.navBackground {
-			background-image: url(navDirty.png );
+			background-image: url(middleBackground.png );
 			background-repeat: no-repeat;
 			width: 1181px;
 			height: 489px;
 			position: relative;
-			top: 128px; //+17
-			left: -181px; //-1
-			z-index: 101;
+			top: 305px;
+			left: 92px;
+			z-index: 30;
+		}
+
+		.navLeftBackground {
+			background-image: url(leftSide.png );
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 306px;
+			left: -179px;
+			width: 272px;
+			height: 302px;
 		}
 	}
 

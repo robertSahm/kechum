@@ -11,7 +11,7 @@ $(function() {
   });
 });
 
-// TEAM HOVER
+//TEAM HOVER
 $(function() {
   $('.teamHover').hover(function(){
     $('.teamBlock').stop(true, true).animate({

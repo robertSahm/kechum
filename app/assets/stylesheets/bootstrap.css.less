@@ -351,14 +351,14 @@ body {
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 	//min-height: 100%;
-	min-width: 1200px;
-	width: 100%;
+	//min-width: 900px;
+	min-width: 100%;
 	min-height: 900px;
 	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url(backgroundTile.jpg) repeat fixed; 
+	background: url(backgroundTile.jpg) repeat center center fixed; 
 	background-size: contain;
 	//overflow: hidden;
 }
@@ -372,7 +372,7 @@ body {
 	top: 0;
 	left: 0;
 	background: url(texture.png); 
-	opacity: .4;
+	opacity: .35;
 	z-index: 50;
 }
 
@@ -486,7 +486,7 @@ body {
 }
 
 .hoverWrapper {
-	width: 100%;
+	width: 1000px;
 	height: 700px;
 	position: absolute;
 	top: 0;
@@ -749,7 +749,7 @@ body {
 }
 
 .logoWrapper {
-	position: fixed;
+	position: absolute;
 	margin: -2px 0 0 -37px;
 	height: 220px;
 	width: 350px;
@@ -765,12 +765,17 @@ body {
 
 .containerMain {
 	position: relative;
-	width: 1200px;
+	left: 0px;
+	width: 900px;
+	//max-width: 100%;
 	height: 900px;
 	margin: 0 auto;
 	z-index: 101;
+	//overflow: auto;
+	//border: 1px solid red;
 
 	.navWrapper {
+		width: 800px;
 
 		.roundedNav {
 			background-image: url('roundedNav.png');

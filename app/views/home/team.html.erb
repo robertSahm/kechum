@@ -84,6 +84,23 @@
 $('.teamNavText h2 a').click(function (e) {
     e.preventDefault();
     $(this).tab('show');
-})
+
+    //$('.tab-content h4').animate({
+    //  opacity: '.3'
+    //  }, 2000
+    //);
+});
+
+$(function() {
+   $('a[data-toggle="tab"]').on('show', function (e) {
+   		$('.tab-content').toggle(700); 
+   		
+    })
+});
+
 
 </script>
+
+
+
+

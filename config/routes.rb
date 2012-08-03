@@ -1,12 +1,12 @@
 Ketchum::Application.routes.draw do
   
-  resources :relationships
+  # resources :relationships
   resources :sessions, only: [:new, :create, :destroy]
   match '/signup', to: 'users#new'
   match '/signin', to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
   resources :admins, only: [:new, :create, :destroy]
-  root to: 'admins#hello'
+  root to: 'home#index'
 
   match '/about', to: 'home#about'
   match '/contact', to: 'home#contact'
@@ -16,14 +16,14 @@ Ketchum::Application.routes.draw do
   match '/client', to: 'home#client'
 
   
-  resources :microposts, only: [:create, :destroy]
-  resources :relationships, only: [:create, :destroy]
+  # resources :microposts, only: [:create, :destroy]
+  # resources :relationships, only: [:create, :destroy]
   
-  resources :users do 
-    member do
-      get :following, :followers
-    end
-  end
+  # resources :users do 
+  #   member do
+  #     get :following, :followers
+  #   end
+  # end
   
 
 

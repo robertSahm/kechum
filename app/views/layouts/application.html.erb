@@ -25,16 +25,9 @@
         <div class="diagram"></div>
       </div>
     </div>
-    <% if params[:controller] == 'admins' %>
-      <%= render 'layouts/intro' %>
-      <% else %>  
-      <%= render 'layouts/header' %>
-    <% end %>
     <%= yield %>
     <div class="logoHomeLink"><%= link_to "", home_path %></div>
   </div>
-
-
     <!--! <p>
       <% if mobile_device? %>
         <%= link_to "Full Site", :mobile => 0 %>
@@ -42,10 +35,6 @@
         <%= link_to "Mobile Site", :mobile => 1 %>
       <% end %>
     </p> -->
-
-    <% if params[:controller] != 'admins' %>
-      <%#= render 'layouts/footer' %>
-    <% end %>
 
 </body>
 </html>

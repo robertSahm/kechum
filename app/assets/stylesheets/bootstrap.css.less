@@ -739,6 +739,7 @@ body {
 
 .roundedNav {
 	background-image: url('roundedNav.png');
+	background-repeat: no-repeat;
 	width: 178px;
 	height: 299px;
 	position: absolute;
@@ -753,7 +754,7 @@ body {
 	margin: -2px 0 0 -37px;
 	height: 220px;
 	width: 350px;
-	z-index: 50;
+	z-index: 1;
 
 	.logo {
 		height: 100%;
@@ -779,6 +780,7 @@ body {
 
 		.roundedNav {
 			background-image: url('roundedNav.png');
+			background-repeat: no-repeat;
 			width: 178px;
 			height: 299px;
 			position: absolute;
@@ -886,7 +888,7 @@ MM.       8M     M8 MM    MM MM   ,pm9MM 8M        MM
 			width: 969px;
 			height: 530px;
 			position: absolute;
-			top: 156px;
+			top: 168px;
 			left: -40px;
 		}
 
@@ -1043,16 +1045,33 @@ MM.           MM   MM 8M""""""  MM    MM MM
 			background-image: url('backgroundNavSmall.png');
 			background-repeat: no-repeat;
 			left: 655px;
+			z-index: 0;
 		}
 
+		.logoRadioClient {
+			background-image: url('logoRadioClient.png');
+			background-repeat: no-repeat;
+			//opacity: .9;
+			width: 1058px;
+			height: 563px;
+			position: absolute;
+			top: 154px;
+			left: -23px;
+			z-index: 2;
+		}
+
+
+		/*
 		.logoDrawn {
-			background-image: url('logoDrawn.png');
+			background-image: url('logoDrawn.gif');
+			background-repeat: no-repeat;
+			//opacity: .9;
 			width: 756px;
 			height: 358px;
 			position: absolute;
-			top: 375px;
+			top: 386px;
 			left: 296px;
-			z-index: 98;
+			z-index: 0;
 		}
 
 		.radio {
@@ -1066,7 +1085,7 @@ MM.           MM   MM 8M""""""  MM    MM MM
 			left: -28px;
 			z-index: 99;
 		}
-
+		*/
 		.loginHeader {
 			background-image: url('loginHeader.png');
 			background-repeat: no-repeat;
@@ -1099,13 +1118,13 @@ MM.           MM   MM 8M""""""  MM    MM MM
 					border: 0;
 					margin: 0;
 					padding: 0;
-		
 					width: 198px;
 					height: 25px;
 					border-radius: 0;
 					font-family: 'MonacoRegular', sans-serif;
 					font-weight: normal;
-					color: black;
+					color: white;
+					background-color: black;
 					padding-left: 5px;
 				}
 			}
@@ -1134,13 +1153,13 @@ MM.           MM   MM 8M""""""  MM    MM MM
 		}
 
 		.logoDots {
-			background-image: url('logoDotsStuff.png');
+			background-image: url('logoDotTheWork.png');
 			width: 960px;
 			height: 423px;
 			position: absolute;
-			top: 77px;
-			left: -285px;
-			z-index: 102;
+			top: 82px;
+			left: -302px;
+			z-index: 2;
 		}
 
 		.checkBoxWrapper {

@@ -2,7 +2,9 @@
 <div class="navWrapper">
   <div class="roundedNav"></div>
   <div class="kids"></div>
-  <div class="navBackground"></div>
+  <!--! <div class="navBackgroundFull"></div>-->
+  <div class="navBackground"></div> 
+
   <div class="navLeftBackground"></div>
   <div class="navTextWrapper">
     <h2><%= link_to "the work", work_path %></h2>
@@ -21,6 +23,21 @@
   <div class="televisionHover hoverSlide rotate45"><%= link_to "", work_path(q: "television") %></div>
   <div class="digitalHover hoverSlide rotate45"><%= link_to "", work_path( q: "digital") %></div>
   <div class="yardsaleHover hoverSlide rotate45"><%= link_to "", work_path %></div>
+</div>
+
+<div class="fillBlocks">
+  <div class="fillBlock fillYardsale">
+    <%= image_tag "yardsaleBlock.png" %>
+  </div>
+  <div class="fillBlock fillDigital">
+    <%= image_tag "yardsaleBlock.png" %>
+  </div>
+
+
+
+
+
+
 </div>
 
 <div class="hoverImages">

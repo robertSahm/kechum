@@ -45,12 +45,12 @@ $(function() {
 $(function() {
   $('.yardsaleHover').hover(function(){
     $('.yardsaleBlock').stop(true, true).animate({
-      top:'-=27', 
+      top:'-=29', 
       left:'-=87'
     },{queue:false,duration:300});
   }, function(){
     $('.yardsaleBlock').stop(true, true).animate({
-      top:'+=27', 
+      top:'+=29', 
       left: '+=87'
     },{queue:false,duration:300});
   });

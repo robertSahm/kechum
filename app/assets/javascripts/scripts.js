@@ -15,12 +15,12 @@ $(function() {
 $(function() {
   $('.teamHover').hover(function(){
     $('.teamBlock').stop(true, true).animate({
-      top:'-=28', 
+      top:'-=29', 
       left:'-=87'
     },{queue:false,duration:300});
   }, function(){
     $('.teamBlock').stop(true, true).animate({
-      top:'+=28', 
+      top:'+=29', 
       left: '+=87'
     },{queue:false,duration:300});
   });
@@ -30,12 +30,12 @@ $(function() {
 $(function() {
   $('.televisionHover').hover(function(){
     $('.televisionBlock').stop(true, true).animate({
-      top:'-=27', 
+      top:'-=28', 
       left:'-=87'
     },{queue:false,duration:300});
   }, function(){
     $('.televisionBlock').stop(true, true).animate({
-      top:'+=27', 
+      top:'+=28', 
       left: '+=87'
     },{queue:false,duration:300});
   });
@@ -60,12 +60,12 @@ $(function() {
 $(function() {
   $('.weatherHover').hover(function(){
     $('.weatherBlock').stop(true, true).animate({
-      top:'-=28', 
+      top:'-=29', 
       left:'-=86'
     },{queue:false,duration:300});
   }, function(){
     $('.weatherBlock').stop(true, true).animate({
-      top:'+=28', 
+      top:'+=29', 
       left: '+=86'
     },{queue:false,duration:300});
   });
@@ -119,12 +119,15 @@ $(function() {
 //DIGITAL HOVER
 $(function() {
   $('.digitalHover').hover(function(){
+    //$('.digitalBlock').css 
     $('.digitalBlock').stop(true, true).animate({
+      
       top:'-=28', 
       left:'-=86'
     },{queue:false,duration:300});
   }, function(){
     $('.digitalBlock').stop(true, true).animate({
+      
       top:'+=28', 
       left: '+=86'
     },{queue:false,duration:300});

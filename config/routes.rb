@@ -11,7 +11,7 @@ Ketchum::Application.routes.draw do
   match '/about', to: 'home#about'
   match '/contact', to: 'home#contact'
   match '/home', to: 'home#index'
-  match '/work', to: 'home#work'
+  match '/work', to: 'home#work2'
   match '/team', to: 'home#team'
   match '/client', to: 'home#client'
 

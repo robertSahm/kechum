@@ -1,5 +1,3 @@
-<% height ||= 450 %>
-<% width ||= 800 %>
 <video
   src="http://s3.amazonaws.com/wibble-assets/videos/ocean_medium.mp4"
   height="396"
@@ -9,40 +7,9 @@
   controls="controls"
 </video>
 <script type="text/javascript">
-
   jwplayer("container").setup({
     flashplayer: "/jwplayer/player.swf",
     'skin' :  '/skins/plexi/plexi.xml'
   });
-  
-  // jwplayer("container").setup({
-  //   flashplayer: "/jwplayer/player.swf",
-  //   'skin' :  '/skins/norden/norden.xml',
-  //   'playlist.position': 'left',
-  //   'playlist.size': '300',
-  //   plugins: {
-  //      'interacter-2': {
-  //          'avg': '3.6',
-  //          'bookmark': '1',
-  //          'mem_id': '12',
-  //          'vid_id': 'video.flv',
-  //          'url': 'http://www.longtailvideo.com/',
-  //          'rat_nb': '333',
-  //          'com_nb': '222',
-  //          'rat_mem_id': '4',
-  //          'lang_path': 'http://clients.excellance.fr/ltv/interacterV5/lang/',
-  //          'lan_short': 'en',
-  //          'disabled': '0',
-  //          'snapshot_width': '320',
-  //          'snapshot_height': '240',
-  //          'snapshot_url': 'http://www.longtailvideo.com/snapshot.php',
-  //          'button_rate': '1',
-  //          'button_bookmark': '1',
-  //          'button_report': '1',
-  //          'button_share': '1',
-  //          'button_comment': '1'
-  //      }
-  //   }
-  // });
 
 </script>

@@ -119,9 +119,9 @@ $(function() {
 //DIGITAL HOVER
 $(function() {
   $('.digitalHover').hover(function(){
-    //$('.digitalBlock').css 
+
+
     $('.digitalBlock').stop(true, true).animate({
-      
       top:'-=28', 
       left:'-=86'
     },{queue:false,duration:300});

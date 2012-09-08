@@ -351,19 +351,20 @@ body {
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 	//min-height: 100%;
-	//min-width: 1000px;
-	width: 100%;
-	//min-height: 600px;
+	//min-width: 900px;
+	min-width: 100%;
+	min-height: 900px;
 	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url(backgroundTile.jpg) repeat fixed; 
+	background: url(backgroundTile.jpg) repeat center center fixed; 
 	background-size: contain;
 	//overflow: hidden;
 }
 
 .texture {
+	//display: none;
 	min-height: 100%;
 	min-width: 400px;
 	width: 100%;
@@ -372,8 +373,8 @@ body {
 	top: 0;
 	left: 0;
 	background: url(texture.png); 
-	opacity: .4;
-	z-index: 50;
+	opacity: .35;
+	z-index: 70;
 }
 
 @media screen and (max-width: 1200px) { /* Specific to this particular image */
@@ -486,7 +487,7 @@ body {
 }
 
 .hoverWrapper {
-	width: 100%;
+	width: 1000px;
 	height: 700px;
 	position: absolute;
 	top: 0;
@@ -616,12 +617,76 @@ body {
 	z-index: 30;
 }
 
+
+// FILL BLOCKS
+
+.fillBlocks {
+
+	.fillBlock {
+		position: absolute;
+	}
+
+	.fillYardsale {
+		top: 392px;
+		left: 719px;
+		z-index: 30;
+	}
+
+	.fillDigital {
+		top: 216px;
+		left: 541px;
+		z-index: 37;
+	}
+
+	.fillTelevision {
+		top: 128px;
+		left: 452px;
+		z-index: 36;
+	}
+
+	.fillClient {
+		top: 215px;
+		left: 179px;
+		z-index: 34;
+	}
+
+	.fillTeam {
+		top: 124px;
+		left: 87px;
+		z-index: 31;
+	}
+
+	.fillWeather {
+		top: 394px;
+		left: 0px;
+		z-index: 29;
+	}
+}
+
+.shadows {
+
+	.shadowSlider {
+		position: absolute;
+	}
+
+	.digitalShadow {
+		top: 200px;
+		left: 900px;
+		z-index: 36;
+	}
+}
+
 .hoverImages {
 	width: 100%;
 	height: 700px;
 	position: absolute;
 	top: 0;
 	left: 0;
+
+	.slideBlock {
+
+
+	}
 
 	//top row
 	.teamBlock {
@@ -694,16 +759,17 @@ body {
 		left: 540px;
 		width: 323px;
 		height: 285px;
-		z-index: 37;
+		z-index: 55;
 	}
 
 	.digitalBlocker {
+		//display: none;
 		position: absolute;
 		width: 184px;
 		height: 181px;
 		top: 308px;
 		left: 632px;
-		z-index: 37;
+		z-index: 55;
 	}
 
 	//bottom row
@@ -713,7 +779,7 @@ body {
 		left: 719px;
 		width: 323px;
 		height: 285px;
-		z-index: 38;
+		z-index: 60;
 	}
 
 	.weatherBlock {
@@ -733,12 +799,13 @@ body {
 		height: 125px;
 		left: 717px;
 		top: 304px;
-		z-index: 38;
+		z-index: 55;
 	}
 }
 
 .roundedNav {
 	background-image: url('roundedNav.png');
+	background-repeat: no-repeat;
 	width: 178px;
 	height: 299px;
 	position: absolute;
@@ -749,11 +816,11 @@ body {
 }
 
 .logoWrapper {
-	position: fixed;
+	position: absolute;
 	margin: -2px 0 0 -37px;
 	height: 220px;
 	width: 350px;
-	z-index: 50;
+	z-index: 1;
 
 	.logo {
 		height: 100%;
@@ -765,15 +832,21 @@ body {
 
 .containerMain {
 	position: relative;
-	width: 1200px;
+	left: 0px;
+	width: 900px;
+	//max-width: 100%;
 	height: 900px;
 	margin: 0 auto;
 	z-index: 101;
+	//overflow: auto;
+	//border: 1px solid red;
 
 	.navWrapper {
+		width: 800px;
 
 		.roundedNav {
 			background-image: url('roundedNav.png');
+			background-repeat: no-repeat;
 			width: 178px;
 			height: 299px;
 			position: absolute;
@@ -791,6 +864,17 @@ body {
 			top: 166px;
 			left: 740px;
 			z-index: 0;
+		}
+
+		.navBackgroundFull {
+			background-image: url(navBackgroundFull.png );
+			background-repeat: no-repeat;
+			width: 1181px;
+			height: 489px;
+			position: relative;
+			top: 128px;
+			left: -184px;
+			z-index: 29;
 		}
 
 		.navBackground {
@@ -881,7 +965,7 @@ MM.       8M     M8 MM    MM MM   ,pm9MM 8M        MM
 			width: 969px;
 			height: 530px;
 			position: absolute;
-			top: 156px;
+			top: 168px;
 			left: -40px;
 		}
 
@@ -1038,16 +1122,33 @@ MM.           MM   MM 8M""""""  MM    MM MM
 			background-image: url('backgroundNavSmall.png');
 			background-repeat: no-repeat;
 			left: 655px;
+			z-index: 0;
 		}
 
+		.logoRadioClient {
+			background-image: url('logoRadioClient.png');
+			background-repeat: no-repeat;
+			//opacity: .9;
+			width: 1058px;
+			height: 563px;
+			position: absolute;
+			top: 154px;
+			left: -23px;
+			z-index: 2;
+		}
+
+
+		/*
 		.logoDrawn {
-			background-image: url('logoDrawn.png');
+			background-image: url('logoDrawn.gif');
+			background-repeat: no-repeat;
+			//opacity: .9;
 			width: 756px;
 			height: 358px;
 			position: absolute;
-			top: 375px;
+			top: 386px;
 			left: 296px;
-			z-index: 98;
+			z-index: 0;
 		}
 
 		.radio {
@@ -1061,7 +1162,7 @@ MM.           MM   MM 8M""""""  MM    MM MM
 			left: -28px;
 			z-index: 99;
 		}
-
+		*/
 		.loginHeader {
 			background-image: url('loginHeader.png');
 			background-repeat: no-repeat;
@@ -1094,13 +1195,13 @@ MM.           MM   MM 8M""""""  MM    MM MM
 					border: 0;
 					margin: 0;
 					padding: 0;
-		
 					width: 198px;
 					height: 25px;
 					border-radius: 0;
 					font-family: 'MonacoRegular', sans-serif;
 					font-weight: normal;
 					color: white;
+					background-color: black;
 					padding-left: 5px;
 				}
 			}
@@ -1129,13 +1230,13 @@ MM.           MM   MM 8M""""""  MM    MM MM
 		}
 
 		.logoDots {
-			background-image: url('logoDotsStuff.png');
+			background-image: url('logoDotTheWork.png');
 			width: 960px;
 			height: 423px;
 			position: absolute;
-			top: 77px;
-			left: -285px;
-			z-index: 102;
+			top: 82px;
+			left: -302px;
+			z-index: 2;
 		}
 
 		.checkBoxWrapper {

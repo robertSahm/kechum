@@ -105,12 +105,12 @@ $(function() {
 $(function() {
   $('.filmHover').hover(function(){
     $('.filmBlock').stop(true, true).animate({
-      top:'-=28', 
+      top:'-=29', 
       left:'-=86'
     },{queue:false,duration:300});
   }, function(){
     $('.filmBlock').stop(true, true).animate({
-      top:'+=28', 
+      top:'+=29', 
       left: '+=86'
     },{queue:false,duration:300});
   });

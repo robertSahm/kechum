@@ -4,11 +4,7 @@
 
 	<div class="playerWrapper">
 		<div class="videoNav">
-			<h3 class='nextButton'><a href="#" class="nextClick">Next-></a></h3>
-<!--
-      <h3><a href="#" class="backClick"><-Back</a></h2>
--->
-			<h3><%= link_to "<-Back", work_path, :class => "backClick" %></h3>  
+			<h3 class='nextButton'><%= link_to "Next->", video_path(@video.permalink), :class => "backClick" %><br /><%= link_to "<-Back", video_path(@video.permalink), :class => "backClick" %></h3>
 		</div>
 
 		<div class="videoInfo">
@@ -30,12 +26,14 @@
   			<h3 class="typeText">
   				<span class="tanBackground"><%= @video.type_of %></span>
   			</h3>
-  			<h3 class="director">
-  				<span class="tanBackground">Director:</span>
-  			</h3>
-  			<h3 class="directorText">
-  				<span class="tanBackground"><%= @video.director %></span>
-  			</h3>
+  			<% if @video.director %>
+    			<h3 class="director">
+    				<span class="tanBackground">Director:</span>
+    			</h3>
+    			<h3 class="directorText">
+    				<span class="tanBackground"><%= @video.director %></span>
+    			</h3>
+  			<% end %>
   	</div>
   	
     <div class="videoContainer">

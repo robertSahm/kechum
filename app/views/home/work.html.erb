@@ -18,72 +18,15 @@
 	
 	<div class="videoCanvas videoSelector">
 		<div id="container">
-        <div class="item square1"><a href="#" class="videoClick linkSquare1"><%= image_tag "dudes.jpg" %></a></div>
-        <div class="item square2"><a href="#" class="videoClick linkSquare2"><%= image_tag "dudes.jpg" %></a></div>
-  			<div class="item square3"><a href="#" class="videoClick linkSquare3"><%= image_tag "dudes.jpg" %></a></div>
-  			<div class="item square4"><a href="#" class="videoClick linkSquare4"><%= image_tag "swimmer.jpg" %></a></div>
- 			  <div class="item square5"><a href="#" class="videoClick linkSquare5"><%= image_tag "swimmer.jpg" %></a></div>
-  			<div class="item square6"><a href="#" class="videoClick linkSquare6"><%= image_tag "jacket.jpg" %></a></div>
-  			<div class="item square7"><a href="#" class="videoClick linkSquare7"><%= image_tag "jacket.jpg" %></a></div>
- 			  <div class="item square8"><a href="#" class="videoClick linkSquare8"><%= image_tag "jacket.jpg" %></a></div>
+        <div class="item square1"><%= link_to (image_tag ("dudes.jpg"  )) , video_player_path %>  </div>
+        <div class="item square2"><%= link_to (image_tag ("dudes.jpg"  )) , video_player_path %>  </div>
+  			<div class="item square3"><%= link_to (image_tag ("dudes.jpg"  )) , video_player_path %>  </div>
+  			<div class="item square4"><%= link_to (image_tag ("swimmer.jpg")) , video_player_path %></div>
+ 			  <div class="item square5"><%= link_to (image_tag ("swimmer.jpg")) , video_player_path %></div>
+  			<div class="item square6"><%= link_to (image_tag ("jacket.jpg" )) , video_player_path %> </div>
+  			<div class="item square7"><%= link_to (image_tag ("jacket.jpg" )) , video_player_path %> </div>
+ 			  <div class="item square8"><%= link_to (image_tag ("jacket.jpg" )) , video_player_path %> </div>
 		</div>
-	</div>
-
-	<div class="playerWrapper">
-		<div class="videoNav">
-			<h3 class='nextButton'><a href="#" class="nextClick">Next-></a></h2>
-			<h3><a href="#" class="backClick"><-Back</a></h2>
-		</div>
-
-		<div class="videoInfo">
-  			<h3 class="title">
-  				<span class="whiteBackground">Project:</span>
-  			</h3>
-  			<h3 class="titleText">
-  				<span class="whiteBackground">The Other Shore</span>
-  			</h3>
-  			<h3 class="networkBrand">
-  				<span class="tanBackground">Network/Brand:</span>
-  			</h3>
-  			<h3 class="networkBrandText">
-  				<span class="tanBackground">Discovery Channel</span>
-  			</h3>
-  			<h3 class="type">
-  				<span class="tanBackground">Type:</span>
-  			</h3>
-  			<h3 class="typeText">
-  				<span class="tanBackground">Documentary</span>
-  			</h3>
-  			<h3 class="director">
-  				<span class="tanBackground">Director:</span>
-  			</h3>
-  			<h3 class="directorText">
-  				<span class="tanBackground">Timothy Wheeler</span>
-  			</h3>
-  	</div>
-  	
-    <div class="videoContainer">
-      <!-- <%= render 'shared/jw_player' %> -->
-      <video
-        src="http://s3.amazonaws.com/wibble-assets/videos/ocean_medium.mp4"
-        height="396"
-        id="container"
-        preload="auto"
-        width="561"
-        controls="controls"
-      </video>
-    </div>
-  </div>
-
-	<h3 class="tabTitle playerHide">
-		Film
-	</h3>
-
-	<div class="playerLongInfo playerHide">
-		
-		<h3 class="descriptionText">
-			THE OTHER SHORE is a feature documentary film following world-record breaking marathon swimmer Diana Nyad as she risks her life to realize her life-long dream and swim 103 miles from Cuba to Florida. Diana Nyad is 62-years-old.
-		<h3>
 	</div>
 
 	<div class="navTextWrapper">
@@ -95,32 +38,6 @@
   	
 </div> <!--! End workWrapper -->
 
-<!-- <script>
-  
-  var $container = $('#container');
-  
-  $container.imagesLoaded( function(){
-   $('#container').isotope({
-     // options
-     itemSelector : '.item',
-     layoutMode : 'fitRows'
-   });
-    jwplayer("container").setup({
-          flashplayer: "/jwplayer/player.swf",
-          'skin' :  '/skins/plexi/plexi.xml'
-    });
-   
-   $('#filters a').click(function(){
-     var selector = $(this).attr('data-filter');
-     $container.isotope({ filter: selector });
-  
-     return false;
-   });
-  });
-  
-  $container.isotope({ filter: ".<%= @filter %>"});
-
-</script> -->
 
 
 

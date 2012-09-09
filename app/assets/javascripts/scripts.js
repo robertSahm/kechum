@@ -1,19 +1,20 @@
 
 // fades in/out video player 
-$(function() {
-  $('a.videoClick').click(function() {
-    $('.playerWrapper, .playerHide').fadeIn(500);
-    $('.videoSelector').fadeOut(500);
-    // jwplayer("container").setup({
-    //       flashplayer: "/jwplayer/player.swf",
-    //       'skin' :  '/skins/plexi/plexi.xml'
-    // });
-  });
-  $('a.backClick').click(function() {
-    $('.videoSelector').fadeIn(500);
-    $('.playerWrapper, .playerHide').fadeOut(500);
-  });
-});
+// $(function() {
+  // $('a.videoClick').click(function() {
+  //   $('.playerWrapper, .playerHide').fadeIn(500);
+  //   $('.videoSelector').fadeOut(500);
+  //   jwplayer("container").setup({
+  //         flashplayer: "/jwplayer/player.swf",
+  //         'skin' :  '/skins/plexi/plexi.xml'
+  //   });
+  // });
+  // $('a.backClick').click(function() {
+  // 	 $("#container").remove();
+  //   $('.playerWrapper, .playerHide').fadeOut(500);
+  //   $('.videoSelector').fadeIn(500);
+  // });
+// });
 
 //TEAM HOVER
 $(function() {

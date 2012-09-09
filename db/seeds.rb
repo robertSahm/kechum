@@ -8,4 +8,4 @@
 
 Video.delete_all
 
-Video.create(brand: "Hello Kity", description: "a movie of the history of FTP file transfer and how nobody fuckin gives a shit", director: "Cameron Crowe", project: "North shore Jamz", type_of: "documentary", url: "http://s3.amazonaws.com/wibble-assets/videos/ocean_medium.mp4")
+Video.create(brand: "Hello Whaley", description: "a great film cronicling the coming of age story of a man who swims acroos the ocean to be with a chick.  Then he meets a whale and rides that whale to prosperity and happiness.  The end of the world as we know it, where whale and man get more than just oily.", director: "Cameron Crowe", project: "North shore Jamz", type_of: "film", url: "http://s3.amazonaws.com/wibble-assets/videos/ocean_medium.mp4")

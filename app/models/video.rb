@@ -3,6 +3,8 @@ class Video < ActiveRecord::Base
 
   before_create :create_permalink
   
+  # code that only allows film, tlevsion, digital or, all as type_of 
+  
   private
     
     def create_permalink

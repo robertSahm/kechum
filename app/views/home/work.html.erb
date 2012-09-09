@@ -15,19 +15,18 @@
 	</div>
 
 	<div class="videoBorder videoSelector"></div>
-	
-	<div class="videoCanvas videoSelector">
-		<div id="container">
-        <div class="item square1"><%= link_to (image_tag ("dudes.jpg"  )) , video_path(@video.permalink) %>  </div>
-        <div class="item square2"><%= link_to (image_tag ("dudes.jpg"  )) , video_path(@video.permalink) %>  </div>
-  			<div class="item square3"><%= link_to (image_tag ("dudes.jpg"  )) , video_path(@video.permalink) %>  </div>
-  			<div class="item square4"><%= link_to (image_tag ("swimmer.jpg")) , video_path(@video.permalink) %></div>
- 			  <div class="item square5"><%= link_to (image_tag ("swimmer.jpg")) , video_path(@video.permalink) %></div>
-  			<div class="item square6"><%= link_to (image_tag ("jacket.jpg" )) , video_path(@video.permalink) %> </div>
-  			<div class="item square7"><%= link_to (image_tag ("jacket.jpg" )) , video_path(@video.permalink) %> </div>
- 			  <div class="item square8"><%= link_to (image_tag ("jacket.jpg" )) , video_path(@video.permalink) %> </div>
-		</div>
-	</div>
+
+	<div class="containerVideos">
+	   <% i = 0 %>
+     <%  @videos.each do |video| %>
+      <div class="posterframeCell square<%= i %>">
+        <div class="item square<%= i %>"><%= link_to (image_tag ("dudes.jpg"  )) , video_path(video.permalink) %>  </div>
+        <div class="clearBox square<%= i %> <%= video.type_of %>"></div>
+      </div>
+      <% i += 1 %>
+    <% end %>
+  </div>
+
 
 	<div class="navTextWrapper">
     	<h2><%= link_to "the work", work_path %></h2>

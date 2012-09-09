@@ -4,6 +4,10 @@ $(function() {
   $('a.videoClick').click(function() {
     $('.playerWrapper, .playerHide').fadeIn(500);
     $('.videoSelector').fadeOut(500);
+    // jwplayer("container").setup({
+    //       flashplayer: "/jwplayer/player.swf",
+    //       'skin' :  '/skins/plexi/plexi.xml'
+    // });
   });
   $('a.backClick').click(function() {
     $('.videoSelector').fadeIn(500);

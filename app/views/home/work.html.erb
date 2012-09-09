@@ -17,9 +17,9 @@
 	<div class="videoBorder videoSelector"></div>
 	
 	<div class="videoCanvas videoSelector">
-		<div id="container" class="isotope">
-  			<div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
- 			  <div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
+		<div id="container">
+        <div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
+        <div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
   			<div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
   			<div class="item television"><a href="#" class="videoClick"><%= image_tag "swimmer.jpg" %></a></div>
  			  <div class="item television"><a href="#" class="videoClick"><%= image_tag "swimmer.jpg" %></a></div>
@@ -67,10 +67,18 @@
   			</h3>
   	</div>
   	
-  	<div class="videoContainer">
-  	  <%= render 'shared/jw_player' %>
-  	</div>
-	</div>
+    <div class="videoContainer">
+      <!-- <%= render 'shared/jw_player' %> -->
+      <video
+        src="http://s3.amazonaws.com/wibble-assets/videos/ocean_medium.mp4"
+        height="396"
+        id="container"
+        preload="auto"
+        width="561"
+        controls="controls"
+      </video>
+    </div>
+  </div>
 
 	<h3 class="tabTitle playerHide">
 		Film
@@ -93,23 +101,28 @@
 </div> <!--! End workWrapper -->
 
 <script>
-
+  
   var $container = $('#container');
-
+  
   $container.imagesLoaded( function(){
-  	$('#container').isotope({
-  	  // options
-  	  itemSelector : '.item',
-  	  layoutMode : 'fitRows'
-  	});
-	
-  	$('#filters a').click(function(){
-  	  var selector = $(this).attr('data-filter');
-  	  $container.isotope({ filter: selector });
-  	  return false;
-  	});
+   $('#container').isotope({
+     // options
+     itemSelector : '.item',
+     layoutMode : 'fitRows'
+   });
+    jwplayer("container").setup({
+          flashplayer: "/jwplayer/player.swf",
+          'skin' :  '/skins/plexi/plexi.xml'
+    });
+   
+   $('#filters a').click(function(){
+     var selector = $(this).attr('data-filter');
+     $container.isotope({ filter: selector });
+  
+     return false;
+   });
   });
-
+  
   $container.isotope({ filter: ".<%= @filter %>"});
 
 </script>

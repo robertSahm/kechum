@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Video.delete_all
+
+Video.create(brand: "Hello Kity", description: "a movie of the history of FTP file transfer and how nobody fuckin gives a shit", director: "Cameron Crowe", project: "North shore Jamz", type_of: "documentary", url: "http://s3.amazonaws.com/wibble-assets/videos/ocean_medium.mp4")

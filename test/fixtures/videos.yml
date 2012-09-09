@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  project: MyString
+  brand: MyString
+  type_of: MyString
+  director: MyString
+  url: MyString
+  description: MyText
+  permalink: MyString
+
+two:
+  project: MyString
+  brand: MyString
+  type_of: MyString
+  director: MyString
+  url: MyString
+  description: MyText
+  permalink: MyString

@@ -1,5 +1,7 @@
 Ketchum::Application.routes.draw do
   
+  resources :videos
+
   # resources :relationships
   resources :sessions, only: [:new, :create, :destroy]
   match '/signup', to: 'users#new'

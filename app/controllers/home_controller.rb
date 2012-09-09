@@ -7,7 +7,9 @@ class HomeController < ApplicationController
   end
   
   def work
+    @video  = Video.first
     @filter = params[:q] || "*"
+    
   end
 
 end

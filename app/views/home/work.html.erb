@@ -18,14 +18,14 @@
 	
 	<div class="videoCanvas videoSelector">
 		<div id="container">
-        <div class="item square1"><%= link_to (image_tag ("dudes.jpg"  )) , video_player_path %>  </div>
-        <div class="item square2"><%= link_to (image_tag ("dudes.jpg"  )) , video_player_path %>  </div>
-  			<div class="item square3"><%= link_to (image_tag ("dudes.jpg"  )) , video_player_path %>  </div>
-  			<div class="item square4"><%= link_to (image_tag ("swimmer.jpg")) , video_player_path %></div>
- 			  <div class="item square5"><%= link_to (image_tag ("swimmer.jpg")) , video_player_path %></div>
-  			<div class="item square6"><%= link_to (image_tag ("jacket.jpg" )) , video_player_path %> </div>
-  			<div class="item square7"><%= link_to (image_tag ("jacket.jpg" )) , video_player_path %> </div>
- 			  <div class="item square8"><%= link_to (image_tag ("jacket.jpg" )) , video_player_path %> </div>
+        <div class="item square1"><%= link_to (image_tag ("dudes.jpg"  )) , video_path(@video.permalink) %>  </div>
+        <div class="item square2"><%= link_to (image_tag ("dudes.jpg"  )) , video_path(@video.permalink) %>  </div>
+  			<div class="item square3"><%= link_to (image_tag ("dudes.jpg"  )) , video_path(@video.permalink) %>  </div>
+  			<div class="item square4"><%= link_to (image_tag ("swimmer.jpg")) , video_path(@video.permalink) %></div>
+ 			  <div class="item square5"><%= link_to (image_tag ("swimmer.jpg")) , video_path(@video.permalink) %></div>
+  			<div class="item square6"><%= link_to (image_tag ("jacket.jpg" )) , video_path(@video.permalink) %> </div>
+  			<div class="item square7"><%= link_to (image_tag ("jacket.jpg" )) , video_path(@video.permalink) %> </div>
+ 			  <div class="item square8"><%= link_to (image_tag ("jacket.jpg" )) , video_path(@video.permalink) %> </div>
 		</div>
 	</div>
 

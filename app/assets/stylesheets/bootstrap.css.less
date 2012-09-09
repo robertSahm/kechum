@@ -1263,29 +1263,37 @@ MM.           MM   MM 8M""""""  MM    MM MM
 			z-index: 105;
 		}
 
-		.videoCanvas {
+		.containerVideos {
+			position: absolute;
 			width: 1152px;
 			height: 384px;
-			position: absolute;
 			top: 289px;
 			left: -70px;
 			z-index: 120;
-			overflow: hidden;
-
-
-			#container {
-				width: 100%;
-				height: 100%;
-
-				.item {
+			
+			.posterframeCell {
+				width: 288px;
+				height: 192px;
+				float : left;
+				
+				.clearBox {
+					position: relative;
+					top : -192px;
+					left : 0 ;
 					width: 288px;
 					height: 192px;
-					opacity: 1;
-
-					&:hover {
-						opacity: .4;
-					}
-
+					opacity : .7;
+					background-color : #000;
+					z-index: 100;
+				}
+			
+				.item {
+					position: relative;
+					top : 0;
+					left : 0 ;
+					width: 288px;
+					height: 192px;
+					z-index : 120;
 					img {
 						width: 100%;
 						height: 100%;
@@ -1294,8 +1302,9 @@ MM.           MM   MM 8M""""""  MM    MM MM
 			}
 		}
 
+
 		.playerWrapper {
-			display: none;
+			// display: none;
 			background-image: url('backgroundPlayer.png');
 			background-repeat: none;
 			width: 1068px;
@@ -1330,6 +1339,7 @@ MM.           MM   MM 8M""""""  MM    MM MM
 					}
 				}
 			}
+		
 		}
 
 		.videoInfo {
@@ -1384,11 +1394,11 @@ MM.           MM   MM 8M""""""  MM    MM MM
 				height: 25px;
 				z-index: 150;
 				font-size: 1em;
-				display: none;
-			}
-
+				//display: none;
+		}
+		
 		.playerLongInfo {
-			display: none;
+			//display: none;
 			position: relative;
 			top: 641px;
 			left: 313px;
@@ -1426,64 +1436,16 @@ MM.           MM   MM 8M""""""  MM    MM MM
 			z-index: 200;
 		}
 	}	
+	
+.z-indexer {
+	position : absolute;
+	width : 652px;
+	height : 369px;
+	top : 63px;
+	left : 286px;
+	z-index : 200;
+}
 } // End main content wrapper
-
-
-
-.isotope-item {
-  z-index: 120;
-}
-
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 110;
-}
-
-/**** Isotope CSS3 transitions ****/
-
-.isotope,
-.isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-      -ms-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-}
-
-.isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
-}
-
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:         top, left, opacity;
-          transition-property:         transform, opacity;
-}
-
-/**** disabling Isotope CSS3 transitions ****/
-
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s;
-      -ms-transition-duration: 0s;
-       -o-transition-duration: 0s;
-          transition-duration: 0s;
-}
-
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
-}
-
-
 
 
 

@@ -1,3 +1,6 @@
+
+
+
 <div class="workWrapper">
 	<div class="roundedNav"></div>
 	<div class="paperSort videoSelector"></div>
@@ -12,69 +15,26 @@
 	</div>
 
 	<div class="videoBorder videoSelector"></div>
-	
-	<div class="videoCanvas videoSelector">
-		<div id="container" class="isotope">
-  			<div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
- 			<div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
-  			<div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
-  			<div class="item television"><a href="#" class="videoClick"><%= image_tag "swimmer.jpg" %></a></div>
- 			<div class="item television"><a href="#" class="videoClick"><%= image_tag "swimmer.jpg" %></a></div>
-  			<div class="item digital"><a href="#" class="videoClick"><%= image_tag "jacket.jpg" %></a></div>
-  			<div class="item digital"><a href="#" class="videoClick"><%= image_tag "jacket.jpg" %></a></div>
- 			<div class="item digital"><a href="#" class="videoClick"><%= image_tag "jacket.jpg" %></a></div>
- 			<div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
- 			<div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
-  			<div class="item film"><a href="#" class="videoClick"><%= image_tag "dudes.jpg" %></a></div>
-  			<div class="item television"><a href="#" class="videoClick"><%= image_tag"swimmer.jpg" %></a></div>
- 			<div class="item television"><a href="#" class="videoClick"><%= image_tag"swimmer.jpg" %></a></div>
-		</div>
-	</div>
 
-	<div class="playerWrapper">
-		<div class="videoNav">
-			<h3 class='nextButton'><a href="#" class="nextClick">Next-></a></h2>
-			<h3><a href="#" class="backClick"><-Back</a></h2>
-		</div>
+	<div class="containerVideos">
+	   <% i = 0 %>
+     <%  @videos.each do |video| %>
+      <div class="posterframeCell square<%= i %>">
+        <div class="item square<%= i %>"><%= link_to (image_tag ("dudes.jpg"  )) , video_path(video.permalink) %>  </div>
+        <% if i == 3  %>
+          <div class="clearBox square<%= i %> television"></div>
+        <% elsif  i == 5 %>
+          <div class="clearBox square<%= i %> digital"></div>
+        <% elsif i == 6 %>
+          <div class="clearBox square<%= i %> television"></div>
+        <% else %>
+          <div class="clearBox square<%= i %> <%= video.type_of %>"></div>
+        <% end %>
+      </div>
+      <% i += 1 %>
+    <% end %>
+  </div>
 
-		<div class="videoInfo">
-  			<h3 class="title">
-  				<span class="whiteBackground">Project:</span>
-  			</h3>
-  			<h3 class="titleText">
-  				<span class="whiteBackground">The Other Shore</span>
-  			</h3>
-  			<h3 class="networkBrand">
-  				<span class="tanBackground">Network/Brand:</span>
-  			</h3>
-  			<h3 class="networkBrandText">
-  				<span class="tanBackground">Discovery Channel</span>
-  			</h3>
-  			<h3 class="type">
-  				<span class="tanBackground">Type:</span>
-  			</h3>
-  			<h3 class="typeText">
-  				<span class="tanBackground">Documentary</span>
-  			</h3>
-  			<h3 class="director">
-  				<span class="tanBackground">Director:</span>
-  			</h3>
-  			<h3 class="directorText">
-  				<span class="tanBackground">Timothy Wheeler</span>
-  			</h3>
-  		</div>
-	</div>
-
-	<h3 class="tabTitle playerHide">
-		Film
-	</h3>
-
-	<div class="playerLongInfo playerHide">
-		
-		<h3 class="descriptionText">
-			THE OTHER SHORE is a feature documentary film following world-record breaking marathon swimmer Diana Nyad as she risks her life to realize her life-long dream and swim 103 miles from Cuba to Florida. Diana Nyad is 62-years-old.
-		<h3>
-	</div>
 
 	<div class="navTextWrapper">
     	<h2><%= link_to "the work", work_path %></h2>
@@ -85,28 +45,25 @@
   	
 </div> <!--! End workWrapper -->
 
+<% if @filter %>
 <script>
-
-var $container = $('#container');
-
-$container.imagesLoaded( function(){
-	$('#container').isotope({
-	  // options
-	  itemSelector : '.item',
-	  layoutMode : 'fitRows'
-	});
-	
-	$('#filters a').click(function(){
-	  var selector = $(this).attr('data-filter');
-	  $container.isotope({ filter: selector });
-	  return false;
-	});
-});
-
-
-$container.isotope({ filter: ".<%= @filter %>"});
-
-
-
-
+  $(function() {
+     var selector = ".<%= @filter %>";
+		$('.clearBox').css('z-index' , '200');		
+		$(selector).css('z-index', '100');
+  });
 </script>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+

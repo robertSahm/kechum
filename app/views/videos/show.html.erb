@@ -1,0 +1,65 @@
+<div class="workWrapper">
+	<div class="roundedNav"></div>
+	<div class="logoDots"></div>
+
+	<div class="playerWrapper">
+		<div class="videoNav">
+			<h3 class='nextButton'><%= link_to "Next->", video_path(@video.permalink), :class => "backClick" %><br /><%= link_to "<-Back", video_path(@video.permalink), :class => "backClick" %></h3>
+		</div>
+
+		<div class="videoInfo">
+  			<h3 class="title">
+  				<span class="whiteBackground">Project:</span>
+  			</h3>
+  			<h3 class="titleText">
+  				<span class="whiteBackground"><%= @video.project %></span>
+  			</h3>
+  			<h3 class="networkBrand">
+  				<span class="tanBackground">Network/Brand:</span>
+  			</h3>
+  			<h3 class="networkBrandText">
+  				<span class="tanBackground"><%= @video.brand %></span>
+  			</h3>
+  			<h3 class="type">
+  				<span class="tanBackground">Type:</span>
+  			</h3>
+  			<h3 class="typeText">
+  				<span class="tanBackground"><%= @video.type_of %></span>
+  			</h3>
+  			<% if @video.director %>
+    			<h3 class="director">
+    				<span class="tanBackground">Director:</span>
+    			</h3>
+    			<h3 class="directorText">
+    				<span class="tanBackground"><%= @video.director %></span>
+    			</h3>
+  			<% end %>
+  	</div>
+  	
+    <div class="videoContainer">
+      <%= render 'home/video'  %>
+    </div>
+  </div>
+
+	<h3 class="tabTitle">
+		Film
+	</h3>
+
+	<div class="playerLongInfo">
+		
+		<h3 class="descriptionText">
+      <%= @video.description %>		
+    </h3>
+	</div>
+
+	<div class="navTextWrapper">
+    	<h2><%= link_to "the work", work_path %></h2>
+    	<h2><%= link_to "the team", team_path %></h2>
+    	<h2><%= link_to "contact", contact_path %></h2>
+    	<h2><%= link_to "client", client_path %></h2>
+  </div>
+  	
+</div> <!--! End workWrapper -->
+
+
+

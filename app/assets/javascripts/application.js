@@ -8,4 +8,4 @@
 //= require twitter/bootstrap
 //= require jquery.isotope.min
 //= require scripts 
-
+//= require jwplayer

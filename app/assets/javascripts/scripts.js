@@ -1,16 +1,4 @@
-
-// fades in/out video player 
-$(function() {
-  $('a.videoClick').click(function() {
-    $('.playerWrapper, .playerHide').fadeIn(500);
-    $('.videoSelector').fadeOut(500);
-  });
-  $('a.backClick').click(function() {
-    $('.videoSelector').fadeIn(500);
-    $('.playerWrapper, .playerHide').fadeOut(500);
-  });
-});
-
+//**************             HOME PAGE BOX ANIMATIONS              *********************////
 //TEAM HOVER
 $(function() {
   $('.teamHover').hover(function(){
@@ -134,5 +122,18 @@ $(function() {
   });
 });
 
+//**************             WORK PAGE LINK SORTER             *********************////
 
+$(function() {
+	$('#filters a').click(function(){
+     var selector = $(this).attr('data-filter');
+		$('.clearBox').css('z-index' , '200');		
+		if (selector == "*") {
+			$('.clearBox').css('z-index' , '100');
+		} else {
+			$(selector).css('z-index', '100');
+		}
+     return false;
+   });
+});
 

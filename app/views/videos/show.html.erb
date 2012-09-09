@@ -1,6 +1,5 @@
 <div class="workWrapper">
 	<div class="roundedNav"></div>
-	<div class="paperSort videoSelector"></div>
 	<div class="logoDots"></div>
 
 	<div class="playerWrapper">
@@ -40,14 +39,7 @@
   	</div>
   	
     <div class="videoContainer">
-      <video
-        src="http://s3.amazonaws.com/wibble-assets/videos/ocean_medium.mp4"
-        height="369"
-        id="jwplayerContainer"
-        preload="auto"
-        width="652"
-        controls="controls">
-      </video>
+      <%= render 'home/video'  %>
     </div>
   </div>
 
@@ -67,17 +59,9 @@
     	<h2><%= link_to "the team", team_path %></h2>
     	<h2><%= link_to "contact", contact_path %></h2>
     	<h2><%= link_to "client", client_path %></h2>
-  	</div>
+  </div>
   	
 </div> <!--! End workWrapper -->
 
 
-<script type="text/javascript">
-  var video_url = <%= @video.url %>;
-  jwplayer("container").setup({
-    flashplayer: "/jwplayer/player.swf",
-    'skin' :  '/skins/plexi/plexi.xml'
-  });
-
-</script>
 

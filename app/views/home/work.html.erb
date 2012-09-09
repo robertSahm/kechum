@@ -21,7 +21,15 @@
      <%  @videos.each do |video| %>
       <div class="posterframeCell square<%= i %>">
         <div class="item square<%= i %>"><%= link_to (image_tag ("dudes.jpg"  )) , video_path(video.permalink) %>  </div>
-        <div class="clearBox square<%= i %> <%= video.type_of %>"></div>
+        <% if i == 3  %>
+          <div class="clearBox square<%= i %> television"></div>
+        <% elsif  i == 5 %>
+          <div class="clearBox square<%= i %> digital"></div>
+        <% elsif i == 6 %>
+          <div class="clearBox square<%= i %> television"></div>
+        <% else %>
+          <div class="clearBox square<%= i %> <%= video.type_of %>"></div>
+        <% end %>
       </div>
       <% i += 1 %>
     <% end %>
@@ -37,7 +45,15 @@
   	
 </div> <!--! End workWrapper -->
 
-
+<% if @filter %>
+<script>
+  $(function() {
+     var selector = ".<%= @filter %>";
+		$('.clearBox').css('z-index' , '200');		
+		$(selector).css('z-index', '100');
+  });
+</script>
+<% end %>
 
 
 

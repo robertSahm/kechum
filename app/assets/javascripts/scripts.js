@@ -21,6 +21,7 @@ $(function() {
       top:'-=28', 
       left:'-=87'
     },{queue:false,duration:300});
+    $('.wordTelevision, .arrowTelevision').stop(true, true).fadeIn(300);
   }, function(){
     $('.televisionBlock').stop(true, true).animate({
       top:'+=28', 

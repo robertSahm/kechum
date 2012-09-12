@@ -16,9 +16,9 @@
 
 	<div class="videoBorder videoSelector"></div>
 	<div class="paginateVideos">
-		<h3><%= link_to "<===" , work_path(offset: @back)%>
+		<h3><%= link_to "<===" , work_path(offset: @back, q: @filter)%>
 			&nbsp;&nbsp;Page&nbsp;&nbsp;
-			<%= link_to "    ===>" , work_path(offset: @forward)%>
+			<%= link_to "    ===>" , work_path(offset: @forward, q: @filter)%>
 		</h3>
 	</div>
 

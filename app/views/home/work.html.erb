@@ -23,24 +23,46 @@
 	</div>
 
 	<div class="videoBorder videoSelector"></div>
-  <% if @filter != 'film' %>
   	<div class="paginateVideos">
-  		<h3><%= link_to "<===" , work_path(offset: @back, q: @filter), :class => "backButton" %>
-  			&nbsp;&nbsp; Page &nbsp;&nbsp;
-  			<%= link_to "===>" , work_path(offset: @forward, q: @filter), :class => "forwardButton" %>
+  		<h3>
+  			<!-- Carousel nav -->
+        <a class="backButton left" href="#myCarousel" data-slide="prev"><===</a>
+        &nbsp;&nbsp; Page &nbsp;&nbsp;
+        <a class="backButton right" href="#myCarousel" data-slide="next">===></a>
   		</h3>
   	</div>
-  <% end %>
-
-	<div class="containerVideos">
-     <%  @videos.each do |video| %>
-      <div class="posterframeCell">
-        <div class="item"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %></div>
-        <div class="clearBox <%= video.type_of %>"></div>
-       <div class="playButton"><a href="#"></a></div>
+  <div class="containerVideos">
+    <div id="myCarousel" class="carousel slide">
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+      <div class="active item">
+           <%  @videos.each do |video| %>
+            <div class="posterframeCell">
+              <div class="itemCell"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %></div>
+              <div class="clearBox <%= video.type_of %>"></div>
+            </div>
+          <% end %>
       </div>
-    <% end %>
+      <div class="item">
+           <%  @videos_left.each do |video| %>
+            <div class="posterframeCell">
+              <div class="itemCell"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %></div>
+              <div class="clearBox <%= video.type_of %>"></div>
+            </div>
+          <% end %>
+      </div>
+      <div class="item">
+           <%  @videos_right.each do |video| %>
+            <div class="posterframeCell">
+              <div class="itemCell"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %></div>
+              <div class="clearBox <%= video.type_of %>"></div>
+            </div>
+          <% end %>
+      </div>
+      </div>
+    </div>
   </div>
+
 
 
 	<div class="navTextWrapper">
@@ -55,13 +77,16 @@
 <% if @filter %>
 <script>
   $(function() {
-     var selector = ".<%= @filter %>";
+    var selector = ".<%= @filter %>";
+
+    $('.carousel').carousel('pause');
 		$('.clearBox').css('z-index' , '200');		
 		$(selector).css('z-index', '100');
 		// if film television of digital is clicke
 		// insert q: @filter into href's backButton & forwardButton
 		
   });
+
 </script>
 <% end %>
 

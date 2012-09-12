@@ -21,18 +21,21 @@ h2 {
 	</div>
 
 	<div class="videoBorder videoSelector"></div>
-	<div class="paginateVideos">
-		<h3><a href="#"><===&nbsp;&nbsp;</a>
-			Page
-			<a href="#">&nbsp;&nbsp;===></a>
-		</h3>
-	</div>
+  <% if @filter != 'film' %>
+  	<div class="paginateVideos">
+  		<h3><%= link_to "<===" , work_path(offset: @back, q: @filter), :class => "backButton" %>
+  			&nbsp;&nbsp;Page&nbsp;&nbsp;
+  			<%= link_to "    ===>" , work_path(offset: @forward, q: @filter), :class => "forwardButton" %>
+  		</h3>
+  	</div>
+  <% end %>
 
 	<div class="containerVideos">
      <%  @videos.each do |video| %>
       <div class="posterframeCell">
         <div class="item"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %></div>
         <div class="clearBox <%= video.type_of %>"></div>
+       <div class="playButton"><%= image_tag 'playsmall' %></div>
       </div>
     <% end %>
   </div>
@@ -53,6 +56,9 @@ h2 {
      var selector = ".<%= @filter %>";
 		$('.clearBox').css('z-index' , '200');		
 		$(selector).css('z-index', '100');
+		// if film television of digital is clicke
+		// insert q: @filter into href's backButton & forwardButton
+		
   });
 </script>
 <% end %>

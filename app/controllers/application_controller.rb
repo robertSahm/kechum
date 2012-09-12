@@ -12,7 +12,9 @@ class ApplicationController < ActionController::Base
         session[:mobile] == "1"
       else
         if request.user_agent =~ /Mobile|webOS/
-          request.user_agent =~ /iPad/ ? false : true
+          request.user_agent =~ /iPad|tablet|GT-P1000/ ? false : true
+        else
+          false
         end
       end
     end

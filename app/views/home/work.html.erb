@@ -29,7 +29,7 @@
       <div class="posterframeCell">
         <div class="item"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %></div>
         <div class="clearBox <%= video.type_of %>"></div>
-        <div class="playButton"></div>
+       <div class="playButton"><%= image_tag 'playsmall' %></div>
       </div>
     <% end %>
   </div>

@@ -18,8 +18,8 @@
   <% if @filter != 'film' %>
   	<div class="paginateVideos">
   		<h3><%= link_to "<===" , work_path(offset: @back, q: @filter), :class => "backButton" %>
-  			&nbsp;&nbsp;Page&nbsp;&nbsp;
-  			<%= link_to "    ===>" , work_path(offset: @forward, q: @filter), :class => "forwardButton" %>
+  			&nbsp;&nbsp; Page &nbsp;&nbsp;
+  			<%= link_to "===>" , work_path(offset: @forward, q: @filter), :class => "forwardButton" %>
   		</h3>
   	</div>
   <% end %>

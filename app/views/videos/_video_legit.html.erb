@@ -1,0 +1,15 @@
+<div  class="z-indexer">
+  <div id="container">Loading the player ...</div>
+</div>
+
+
+<script type="text/javascript">
+  jwplayer("container").setup({
+    flashplayer: "/jwplayer/player.swf",
+    file: "<%= @video.url %>",
+    height: 369,
+    width: 652,
+    image: "<%= @video.posterframe %>",
+    skin: "/skins/glow/glow.xml"
+  });
+</script>

@@ -1,8 +1,5 @@
 <style>
 	
-h2 {
-	color: 47BCBA !important;
-}
 
 </style>
 
@@ -13,10 +10,21 @@ h2 {
 	<div class="logoDots"></div>
 	<div class="checkBoxWrapper videoSelector">
 		<div id="filters">
-			<h2><a href="#" data-filter=".film">Film</a></h2>
-			<h2><a href="#" data-filter=".television">Television</a></h2>
-			<h2><a href="#" data-filter=".digital">Digital</a></h2>
-			<h2><a href="#" data-filter="*">all</a></h2>
+			<h2 class="filmFilter"><a href="#" data-filter=".film">Film</a>
+				<div class="filmBox checkBox"></div>
+				<div class="filmCheck checkMark"></div>
+			</h2>
+			<h2 class="televisionFilter"><a href="#" data-filter=".television">Television</a>
+				<div class="televisionBox checkBox"></div>
+				<div class="televisionCheck checkMark"></div>
+			</h2>
+			
+			<h2 class="digitalFilter"><a href="#" data-filter=".digital">Digital</a>
+				<div class="digitalBox checkBox"></div>
+				<div class="digitalCheck checkMark"></div>
+			</h2>
+			
+			<!--! <h2><a href="#" data-filter="*">all</a></h2> -->
 		</div>
 	</div>
 
@@ -35,14 +43,14 @@ h2 {
       <div class="posterframeCell">
         <div class="item"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %></div>
         <div class="clearBox <%= video.type_of %>"></div>
-       <div class="playButton"><%= image_tag 'playsmall' %></div>
+       <div class="playButton"><a href="#"></a></div>
       </div>
     <% end %>
   </div>
 
 
 	<div class="navTextWrapper">
-    	<h2><%= link_to "the work", work_path %></h2>
+    	<h2 class="navSelected"><%= link_to "the work", work_path %></h2>
     	<h2><%= link_to "the team", team_path %></h2>
     	<h2><%= link_to "contact", contact_path %></h2>
     	<h2><%= link_to "client", client_path %></h2>

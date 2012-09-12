@@ -14,6 +14,21 @@ class VideosController < ApplicationController
   # GET /videos/1.json
   def show
     @video = Video.find_by_permalink(params[:id])
+    
+    previous_video = Video.previous(@video)
+    if previous_video.empty?
+      @previous = Video.last.permalink
+    else
+      @previous = previous_video.pop.permalink
+    end
+    
+    next_video = Video.next(@video)
+    if next_video.empty?
+      @next = Video.first.permalink
+    else
+      @next = next_video.pop.permalink
+    end
+    # we may need some cant find permalink screen      
 
     respond_to do |format|
       format.html # show.html.erb

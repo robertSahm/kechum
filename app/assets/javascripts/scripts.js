@@ -12,7 +12,7 @@ $(function() {
       top:'+=29', 
       left: '+=87'
     },{queue:false,duration:300});
-    $('.wordTheTeam, .arrowTheTeam').fadeOut(300);
+    $('.wordTheTeam, .arrowTheTeam').fadeOut({queue:false,duration:300});
   });
 });
 
@@ -29,7 +29,7 @@ $(function() {
       top:'+=28', 
       left: '+=87'
     },{queue:false,duration:300});
-    $('.wordTelevision, .arrowTelevision').fadeOut(300);
+    $('.wordTelevision, .arrowTelevision').fadeOut({queue:false,duration:300});
   });
 });
 

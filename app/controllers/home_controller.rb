@@ -8,19 +8,24 @@ class HomeController < ApplicationController
   
   def work    
     @filter = params[:q] || nil 
-    if params[:offset] == '8'
-      @videos = Video.limit(8).offset(params[:offset])
-      @back = 16
-      @forward = nil
-    elsif params[:offset] == '16'
-      @videos = Video.limit(8).offset(params[:offset])
-      @back = nil
-      @forward = 8
-    else
-      @videos  = Video.limit(8)
-      @back = 8
-      @forward = 16
-    end  
+    # if params[:offset] == '8'
+    #   @videos = Video.limit(8).offset(params[:offset])
+    #   @back = 16
+    #   @forward = nil
+    # elsif params[:offset] == '16'
+    #   @videos = Video.limit(8).offset(params[:offset])
+    #   @back = nil
+    #   @forward = 8
+    # else
+    #   @videos  = Video.limit(8)
+    #   @back = 8
+    #   @forward = 16
+    # end 
+    @videos = Video.limit(8)
+    @videos_left = Video.limit(8).offset(8)
+    @videos_right = Video.limit(8).offset(16)
+    
+    render 'work_old' 
   end
   
   def video

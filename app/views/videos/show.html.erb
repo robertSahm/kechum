@@ -7,6 +7,10 @@
 			<h3 class='nextButton'><%= link_to "Next->", video_path(@next), :class => "backClick" %><br /><%= link_to "<-Back", video_path(@previous), :class => "backClick" %></h3>
 		</div>
 
+    <div class="closeButton">
+      <h3 class="closeX"><%= link_to "[X]", work_path %></h3>
+    </div>
+
 		<div class="videoInfo">
   			<h3 class="title">
   				<span class="whiteBackground">Project:</span>

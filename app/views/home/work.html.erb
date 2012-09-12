@@ -15,12 +15,19 @@
 	</div>
 
 	<div class="videoBorder videoSelector"></div>
+	<div class="paginateVideos">
+		<h3><%= link_to "<===" , work_path(offset: @back)%>
+			&nbsp;&nbsp;Page&nbsp;&nbsp;
+			<%= link_to "    ===>" , work_path(offset: @forward)%>
+		</h3>
+	</div>
 
 	<div class="containerVideos">
      <%  @videos.each do |video| %>
       <div class="posterframeCell">
-        <div class="item"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %>  </div>
+        <div class="item"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %></div>
         <div class="clearBox <%= video.type_of %>"></div>
+        <div class="playButton"></div>
       </div>
     <% end %>
   </div>

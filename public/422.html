@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The change you wanted was rejected (422)</title>
+  <title>The page you were looking for doesn't exist (404)</title>
   <style type="text/css">
-    body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
+
+  h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
+
+    body { 
+      background-color: #E0DFB4; 
+
+    }
+
+    .backgroundImage422 {
+      background-image: url('error422.png');
+      height: 650px;
+      width: 1184px;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .homeLink {
+      position: absolute;
+      width: 420px;
+      height: 100px;
+      top: 312px;
+      left: 553px;
+    }
+
+     a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      //border: 1px solid red;
+      top: 0;
+      left: 0;
+    }
+
     div.dialog {
       width: 25em;
       padding: 0 4em;
@@ -12,15 +44,18 @@
       border-right-color: #999;
       border-bottom-color: #999;
     }
-    h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
+
+    
+
   </style>
 </head>
 
 <body>
-  <!-- This file lives in public/422.html -->
-  <div class="dialog">
-    <h1>The change you wanted was rejected.</h1>
-    <p>Maybe you tried to change something you didn't have access to.</p>
+  <!-- This file lives in public/404.html -->
+  <div class="backgroundImage422"></div>
+  <div class="homeLink">
+    <a href="/"></a>
   </div>
 </body>
 </html>
+

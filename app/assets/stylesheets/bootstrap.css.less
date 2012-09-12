@@ -339,6 +339,13 @@ h6 {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
+	/*
+	-webkit-transition: all .3s ease;
+    -moz-transition:    all .3s ease;
+    -ms-transition:     all .3s ease;
+    -o-transition:      all .3s ease;
+   	*/
 }
 
 html { 
@@ -466,7 +473,7 @@ body {
 }
 
 .rotate45 {
-		    transform: rotate(45deg);
+		transform: rotate(45deg);
     -ms-transform: rotate(45deg); /* IE 9 */
 -webkit-transform: rotate(45deg); /* Safari and Chrome */
      -o-transform: rotate(45deg); /* Opera */
@@ -633,9 +640,12 @@ body {
 	}
 
 	.fillYardsale {
+		height: 220px;
+		width: 280px;
 		top: 392px;
 		left: 719px;
 		z-index: 30;
+		
 	}
 
 	.fillDigital {
@@ -676,13 +686,15 @@ body {
 	}
 
 	.digitalShadow {
-		top: 200px;
-		left: 900px;
-		z-index: 36;
+		//display: none;
+		top: 216px;
+		left: 540px;
+		z-index: 55;
 	}
 }
 
 .hoverImages {
+	//display: none;
 	width: 100%;
 	height: 700px;
 	position: absolute;
@@ -716,8 +728,8 @@ body {
 	//middle row
 	.contactBlock {
 		position: absolute;
-		top: 215px;
-		left: -1px;
+		top: 216px;
+		left: 0px;
 		width: 323px;
 		height: 285px;
 		z-index: 29;
@@ -743,7 +755,7 @@ body {
 
 	.filmBlock {
 		position: absolute;
-		top: 216px;
+		top: 219px;
 		left: 360px;
 		width: 323px;
 		height: 285px;
@@ -775,16 +787,17 @@ body {
 		height: 181px;
 		top: 308px;
 		left: 632px;
-		z-index: 55;
+		z-index: 56;
 	}
 
 	//bottom row
+
 	.yardsaleBlock {
 		position: absolute;
-		top: 392px;
-		left: 719px;
 		width: 323px;
 		height: 285px;
+		top: 393px;
+		left: 719px;
 		z-index: 60;
 	}
 
@@ -807,6 +820,203 @@ body {
 		top: 304px;
 		z-index: 55;
 	}
+}
+
+.arrowsWordsWrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	 
+
+	.wordWeather {
+		display: none;
+		background-image: url('wordWeather.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 157px;
+		height: 52px;
+		top: 589px;
+		left: 9px;
+		z-index: 61;
+	}
+
+	.arrowWeather {
+		display: none;
+		background-image: url('arrowWeather.png');
+		position: absolute;
+		width: 98px;
+		height: 168px;
+		top: 433px;
+		left: 18px;
+		z-index: 61;
+	}
+
+	.wordContact {
+		display: none;
+		background-image: url('wordContact.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 146px;
+		height: 46px;
+		top: 103px;
+		left: 12px;
+		z-index: 61;
+	}
+
+	.arrowContact {
+		display: none;
+		background-image: url('arrowContact.png');
+		position: absolute;
+		width: 91px;
+		height: 123px;
+		top: 150px;
+		left: 17px;
+		z-index: 61;
+	}
+
+	.wordTheTeam {
+		display: none;
+		background-image: url('wordTheTeam.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 195px;
+		height: 45px;
+		top: 105px;
+		left: 215px;
+		z-index: 61;
+	}
+
+	.arrowTheTeam {
+		display: none;
+		background-image: url('arrowTheTeam.png');
+		position: absolute;
+		width: 150px;
+		height: 40px;
+		top: 152px;
+		left: 120px;
+		z-index: 61;
+	}
+
+	.wordClient {
+		display: none;
+		background-image: url('wordClient.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 118px;
+		height: 46px;
+		top: 160px;
+		left: 314px;
+		z-index: 61;
+	}
+
+	.arrowClient {
+		display: none;
+		background-image: url('arrowClient.png');
+		position: absolute;
+		width: 138px;
+		height: 64px;
+		top: 208px;
+		left: 220px;
+		z-index: 61;
+	}
+
+	.wordFilm {
+		display: none;
+		background-image: url('wordFilm.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 100px;
+		height: 44px;
+		top: 52px;
+		left: 309px;
+		z-index: 61;
+	}
+
+	.arrowFilm {
+		display: none;
+		background-image: url('arrowFilm.png');
+		position: absolute;
+		width: 40px;
+		height: 194px;
+		top: 94px;
+		left: 402px;
+		z-index: 61;
+	}
+
+	.wordTelevision {
+		display: none;
+		background-image: url('wordTelevision.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 175px;
+		height: 45px;
+		top: 4px;
+		left: 347px;
+		z-index: 61;
+	}
+
+	.arrowTelevision {
+		display: none;
+		background-image: url('arrowTelevision.png');
+		position: absolute;
+		width: 26px;
+		height: 152px;
+		top: 55px;
+		left: 459px;
+		z-index: 61;
+	}
+
+	.wordDigital {
+		display: none;
+		background-image: url('wordDigital.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 146px;
+		height: 63px;
+		top: 52px;
+		left: 493px;
+		z-index: 61;
+	}
+
+	.arrowDigital {
+		display: none;
+		background-image: url('arrowDigital.png');
+		position: absolute;
+		width: 53px;
+		height: 192px;
+		top: 100px;
+		left: 543px;
+		z-index: 61;
+	}
+
+	.wordYardsale {
+		display: none;
+		background-image: url('wordYardsale.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 124px;
+		height: 110px;
+		top: 100px;
+		left: 859px;
+		z-index: 61;
+	}
+
+	.arrowYardsale {
+		display: none;
+		background-image: url('arrowYardsale.png');
+		position: absolute;
+		width: 181px;
+		height: 257px;
+		top: 206px;
+		left: 734px;
+		z-index: 61;
+	}
+
+
+	
+
 }
 
 .roundedNav {
@@ -898,8 +1108,8 @@ body {
 			background-image: url(leftSide.png );
 			background-repeat: no-repeat;
 			position: absolute;
-			top: 306px;
-			left: -179px;
+			top: 307px;
+			left: -177px;
 			width: 272px;
 			height: 302px;
 		}
@@ -968,10 +1178,10 @@ MM.       8M     M8 MM    MM MM   ,pm9MM 8M        MM
 
 		.contactBackground {
 			background: url(contactImage.png); 
-			width: 969px;
-			height: 530px;
+			width: 965px;
+			height: 514px;
 			position: absolute;
-			top: 168px;
+			top: 173px;
 			left: -40px;
 		}
 
@@ -1260,17 +1470,39 @@ MM.           MM   MM 8M""""""  MM    MM MM
 
 		.videoBorder {
 			background-image: url('videosBorder.png');
-			width: 1272px;
-			height: 457px;
+			width: 1261px;
+			height: 444px;
 			position: absolute;
 			top: 268px;
-			left: -125px;
+			left: -119px;
 			z-index: 105;
 		}
 
-		.containerVideos {
+		.paginateVideos {
+			position: absolute;
+			width: 280px;
+			height: 28px;
+			top: 677px;
+			left: 70px;
+			//border: 1px solid red;
+			z-index: 200;
 
-			
+			h3 {
+				color: white;
+				text-align: center;
+
+				a {
+					color: white;
+					text-decoration: none;
+
+					&:hover {
+						color: @blueText;
+					}
+				}
+			}
+		}
+
+		.containerVideos {
 			position: absolute;
 			width: 1152px;
 			height: 384px;
@@ -1295,19 +1527,23 @@ MM.           MM   MM 8M""""""  MM    MM MM
 				}
 			
 				.item {
-					
 					position: relative;
 					top : 0;
 					left : 0 ;
 					width: 288px;
 					height: 192px;
 					z-index : 120;
+
+					&:hover {
+						border: 13px solid black;
+						
 					img {
 						width: 100%;
 						height: 100%;
+						//border: 0px solid black;
+
+						
 					}
-					&:hover {
-						border : 10px solid black;
 					}
 				}
 			}
@@ -1324,6 +1560,26 @@ MM.           MM   MM 8M""""""  MM    MM MM
 			top: 235px;
 			left: 0px;
 			z-index: 150;
+
+			.closeButton {
+				position: absolute;
+				height: 32px;
+				width: 57px;
+				top: 56px;
+				left: 936px;
+				text-align: center;
+				z-index: 200;
+				
+				h3.closeX a {
+					color: black;
+					font-size: 1.3em;
+					text-decoration: none;
+
+					&:hover {
+						color: @blueText;
+					}
+				}
+			}
 
 			.videoNav {
 				height: 185px;

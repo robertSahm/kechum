@@ -7,10 +7,8 @@ class HomeController < ApplicationController
   end
   
   def work
-    @video  = Video.first
-    @filter = params[:q] || nil
-    @videos = [@video, @video, @video, @video , @video , @video , @video , @video]
-    
+    @videos  = Video.limit(8)
+    @filter = params[:q] || nil    
   end
   
   def video

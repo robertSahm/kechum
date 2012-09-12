@@ -17,21 +17,11 @@
 	<div class="videoBorder videoSelector"></div>
 
 	<div class="containerVideos">
-	   <% i = 0 %>
      <%  @videos.each do |video| %>
-      <div class="posterframeCell square<%= i %>">
-        <div class="item square<%= i %>"><%= link_to (image_tag ("dudes.jpg"  )) , video_path(video.permalink) %>  </div>
-        <% if i == 3  %>
-          <div class="clearBox square<%= i %> television"></div>
-        <% elsif  i == 5 %>
-          <div class="clearBox square<%= i %> digital"></div>
-        <% elsif i == 6 %>
-          <div class="clearBox square<%= i %> television"></div>
-        <% else %>
-          <div class="clearBox square<%= i %> <%= video.type_of %>"></div>
-        <% end %>
+      <div class="posterframeCell">
+        <div class="item"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %>  </div>
+        <div class="clearBox <%= video.type_of %>"></div>
       </div>
-      <% i += 1 %>
     <% end %>
   </div>
 

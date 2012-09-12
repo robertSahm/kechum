@@ -3,7 +3,6 @@ class Video < ActiveRecord::Base
 
   after_create :create_permalink
   
-  # code that only allows film, televsion, digital or, all as type_of 
   validates_inclusion_of :type_of, :in => ['film', 'television', 'digital'], :message => "attribute :type_of must be 'film, television, or digital' "
   
   private

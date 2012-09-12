@@ -4,7 +4,7 @@
 
 	<div class="playerWrapper">
 		<div class="videoNav">
-			<h3 class='nextButton'><%= link_to "Next->", video_path(@video.permalink), :class => "backClick" %><br /><%= link_to "<-Back", video_path(@video.permalink), :class => "backClick" %></h3>
+			<h3 class='nextButton'><%= link_to "Next->", video_path(@next), :class => "backClick" %><br /><%= link_to "<-Back", video_path(@previous), :class => "backClick" %></h3>
 		</div>
 
 		<div class="videoInfo">
@@ -34,15 +34,23 @@
     				<span class="tanBackground"><%= @video.director %></span>
     			</h3>
   			<% end %>
+  			<% if @video.producer %>
+    			<h3 class="director">
+    				<span class="tanBackground">Producer:</span>
+    			</h3>
+    			<h3 class="directorText">
+    				<span class="tanBackground"><%= @video.producer %></span>
+    			</h3>
+  			<% end %>
   	</div>
   	
     <div class="videoContainer">
-      <%= render 'home/video'  %>
+      <%= render 'video'  %>
     </div>
   </div>
 
 	<h3 class="tabTitle">
-		Film
+		<%= @video.type_of.capitalize %>
 	</h3>
 
 	<div class="playerLongInfo">

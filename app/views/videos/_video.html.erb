@@ -1,0 +1,24 @@
+
+<div class="z-indexer">  
+  <video id="mediaplayer"
+      width="652"
+      height="369"
+      src="<%= @video.url %>"
+      poster="<%= @video.posterframe %>"
+      preload="auto">
+  </video>
+</div>
+
+
+
+
+<script type="text/javascript">
+  jwplayer('mediaplayer').setup({
+     'flashplayer': 'http://player.longtailvideo.com/player.swf'
+  });
+</script>
+
+
+
+
+

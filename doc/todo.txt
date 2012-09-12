@@ -1,0 +1,7 @@
+x 1 authorize and skin jwplayer
+2 add play button to posterframeCell
+3 add checkboxes to film/digi/tv and sort based on all, each, or pairs
+4 have page remember when film/digi/tv has been chosen and keep value when carouselling
+  	- do not allow carouselling to panes without film types
+5 put the work posterframes in a carousel
+6 ajax the video player into the work page and back to work page on x-box via ajax

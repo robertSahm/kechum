@@ -11,9 +11,11 @@ class ApplicationController < ActionController::Base
       if session[:mobile]
         session[:mobile] == "1"
       else
-        request.user_agent =~ /Mobile|webOS/
-        # trying to remove iPad from mobile sniff
-        false if request.user_agent =~ /iPad/
+        if request.user_agent =~ /Mobile|webOS/
+          request.user_agent =~ /iPad|tablet|GT-P1000/ ? false : true
+        else
+          false
+        end
       end
     end
 

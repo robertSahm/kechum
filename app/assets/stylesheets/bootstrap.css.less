@@ -283,6 +283,7 @@ MM.        8M     M8 MM 8M     M8 MM             `MM A'  ,pm9MM    MM     `YMMMa
 */ 
 
 @blueText: #005A7E;
+@babyBlueText : #1ff;
 
 /*                                                                                                                                                                                                                                  ,,                
 MMP""MM""YMM                                                              `7MM                
@@ -1525,7 +1526,20 @@ MM.           MM   MM 8M""""""  MM    MM MM
 					background-color : #000;
 					z-index: 100;
 				}
-			
+				.playButton {
+					position : relative;
+					background-color : white;
+					top : -384px;
+					left : 0 ;
+					width: 288px;
+					height: 192px;
+					opacity: 0;
+					z-index: 140;
+					&:hover {
+						//border: 13px solid black;
+						//opacity : 1;
+					}
+				}
 				.item {
 					position: relative;
 					top : 0;
@@ -1533,17 +1547,11 @@ MM.           MM   MM 8M""""""  MM    MM MM
 					width: 288px;
 					height: 192px;
 					z-index : 120;
-
-					&:hover {
-						border: 13px solid black;
-						
+								
 					img {
 						width: 100%;
 						height: 100%;
-						//border: 0px solid black;
-
-						
-					}
+						//border: 0px solid black;s
 					}
 				}
 			}
@@ -1571,12 +1579,13 @@ MM.           MM   MM 8M""""""  MM    MM MM
 				z-index: 200;
 				
 				h3.closeX a {
-					color: black;
+					background-color: black;
+					color: white;
 					font-size: 1.3em;
 					text-decoration: none;
 
 					&:hover {
-						color: @blueText;
+						color: @babyBlueText;
 					}
 				}
 			}

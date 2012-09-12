@@ -25,6 +25,40 @@ Video.delete_all
     url: "http://www.ketchumlabs.com/thework/video/dig_addidas.mp4"
 
   )
+  Video.create(
+
+    brand: "Red Bull/Fuel TV",
+
+    description: "Promo featuring 2-time Olympic gold metal champion, Shaun White, and the documentary about his secret training camp leading up to the 2010 Vancouver Olympics.",
+
+    producer: "Patrick Weir", 
+
+    project: "Project X Promo", 
+
+    type_of: "television",
+
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_projectx.jpg",  
+
+    url: "http://www.ketchumlabs.com/thework/video/dig_projectx.mp4"
+
+  )
+  Video.create(
+
+    brand: "Fairtrade Films",
+
+    description: "During a balmy summer in rural Mississippi, a troubled 14-year-old boy comes to realize what truly matters to him: family. With a remarkable empathy for its characters, this atmospheric first feature by Matthew Gordon is a loving look at a teenage boy negotiating what it means to be a man.",
+
+    producer: "Kevin Abrams", 
+
+    project: "The Dynamiter", 
+
+    type_of: "film",
+
+    posterframe: "http://www.ketchumlabs.com/thework/poster/film_dynamiter.jpg",  
+
+    url: "http://www.ketchumlabs.com/thework/video/film_dynamiter.mp4"
+
+  )
 
   Video.create(
 
@@ -41,6 +75,40 @@ Video.delete_all
     posterframe: "http://www.ketchumlabs.com/thework/poster/dig_cheapskate.jpg",  
 
     url: "http://www.ketchumlabs.com/thework/video/dig_cheapskate.mp4"
+
+  )
+  Video.create(
+
+    brand: "Fox",
+
+    description: "Chasing Spencer chronicles the fish out of water rookie Nascar car driver, Spencer Gallagher, as he makes his foray into the world of Nascar with little experience behind the wheel.",
+
+    producer: "Ketchum Labs", 
+
+    project: "Chasing Spencer", 
+
+    type_of: "television",
+
+    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_chasingspencer.jpg",  
+
+    url: "http://www.ketchumlabs.com/thework/video/tv_chasingspencer.mp4"
+
+  )
+  Video.create(
+
+    brand: "Ketchum Labs",
+
+    description: "The Other Shore follows world-renowned swimmer, Diana Nyad, as she resurrects her thirty-year-old dream of swimming 103+ miles non-stop from Cuba to Florida without a shark cage.",
+
+    producer: "Ketchum Labs", 
+
+    project: "The Other Shore", 
+
+    type_of: "film",
+
+    posterframe: "http://www.ketchumlabs.com/thework/poster/film_tos.jpg",  
+
+    url: "http://www.ketchumlabs.com/thework/video/film_tos.mp4"
 
   )
 
@@ -61,6 +129,23 @@ Video.delete_all
     url: "http://www.ketchumlabs.com/thework/video/dig_dp.mp4"
 
   )
+  Video.create(
+
+    brand: "Fuel TV",
+
+    description: "Pro snowboarder, Travis Parker, hits the great southwest in search of the lore of the mountain men.  On his way, he discovers that finding true wilderness these days is hard to come by.",
+
+    producer: "Patrick Weir", 
+
+    project: "Environmentally Challenged", 
+
+    type_of: "television",
+
+    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_envirochall.jpg",  
+
+    url: "http://www.ketchumlabs.com/thework/video/tv_envirochall.mp4"
+
+  )
 
   Video.create(
 
@@ -77,6 +162,23 @@ Video.delete_all
     posterframe: "http://www.ketchumlabs.com/thework/poster/dig_filmaker-control.jpg",  
 
     url: "http://www.ketchumlabs.com/thework/video/dig_filmaker-control.mp4"
+
+  )
+  Video.create(
+
+    brand: "Fuel TV",
+
+    description: "In this episode, Fuel TV's marquee docu-series, Firsthand, chronicles Freestyle Motocross star, Kenny Bartram, as he competes in the FMX Triple Crown and heads to England to go head to head with in an endurance race with Travis Pastrana.",
+
+    producer: "Patrick Weir", 
+
+    project: "Firsthand: Kenny Bartram", 
+
+    type_of: "television",
+
+    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fh-kenny.jpg",  
+
+    url: "http://www.ketchumlabs.com/thework/video/tv_fh-kenny.mp4"
 
   )
 
@@ -115,22 +217,21 @@ Video.delete_all
     url: "http://www.ketchumlabs.com/thework/video/dig_foodbankPSA.mp4"
 
   )
-
   Video.create(
 
-    brand: "Red Bull/Fuel TV",
+    brand: "Fuel TV",
 
-    description: "Promo featuring 2-time Olympic gold metal champion, Shaun White, and the documentary about his secret training camp leading up to the 2010 Vancouver Olympics.",
+    description: "In this episode, Fuel TV's marquee docu-series, Firsthand, chronicles veteran female pro surfer, Rochelle Ballard, as she struggles to stay afloat amongst the younger generation of female surfers.  Will this be her final year or can she dig deep and prove her worth for another couple years.",
 
     producer: "Patrick Weir", 
 
-    project: "Project X Promo", 
+    project: "Firsthand: Rochelle Ballard", 
 
     type_of: "television",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_projectx.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fh-rochelle.jpg",  
 
-    url: "http://www.ketchumlabs.com/thework/video/dig_projectx.mp4"
+    url: "http://www.ketchumlabs.com/thework/video/tv_fh-rochelle.mp4"
 
   )
 
@@ -187,6 +288,23 @@ Video.delete_all
   )
   Video.create(
 
+    brand: "Fuel TV",
+
+    description: "In this episode, Fuel TV's marquee docu-series, Firsthand, chronicles Peruvian female surfer, Sofia Mulanovich, as she goes down to the wire for the ASP Women's World Championship in Oahu, Hawaii.  After, she heads back to her homeland only discover she's become a national hero and celebrity overnight.",
+
+    producer: "Patrick Weir", 
+
+    project: "Firsthand: Sofia Mulanovich", 
+
+    type_of: "television",
+
+    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fh-sofia.jpg",  
+
+    url: "http://www.ketchumlabs.com/thework/video/tv_fh-sofia.mp4"
+
+  )
+  Video.create(
+
     brand: "Pilot",
 
     description: "A cross between Inbetweeners and High Fidelity, Skate Shop follows three employees and the oddball customers that loiter in the wee hours of the day.",
@@ -235,6 +353,24 @@ Video.delete_all
     url: "http://www.ketchumlabs.com/thework/video/dig_snl.mp4"
 
   )
+  
+  Video.create(
+
+    brand: "Fuel TV",
+
+    description: "Comedian Chris Fairbanks takes to the stage for a half-hour of giggles for Fuel TV's first ever comedy series.",
+
+    producer: "Ketchum Labs", 
+
+    project: "Chris Fairbanks: Fairly Uncertain", 
+
+    type_of: "television",
+
+    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fairbankscomedy.jpg",  
+
+    url: "http://www.ketchumlabs.com/thework/video/tv_fairbankscomedy.mp4"
+
+  )
   Video.create(
 
     brand: "Toyota/Saatchi & Saatchi",
@@ -269,58 +405,8 @@ Video.delete_all
     url: "http://www.ketchumlabs.com/thework/video/dig_truth.mp4"
 
   )
-  Video.create(
 
-    brand: "Fairtrade Films",
 
-    description: "During a balmy summer in rural Mississippi, a troubled 14-year-old boy comes to realize what truly matters to him: family. With a remarkable empathy for its characters, this atmospheric first feature by Matthew Gordon is a loving look at a teenage boy negotiating what it means to be a man.",
-
-    producer: "Kevin Abrams", 
-
-    project: "The Dynamiter", 
-
-    type_of: "film",
-
-    posterframe: "http://www.ketchumlabs.com/thework/poster/film_dynamiter.jpg",  
-
-    url: "http://www.ketchumlabs.com/thework/video/film_dynamiter.mp4"
-
-  )
-  Video.create(
-
-    brand: "Ketchum Labs",
-
-    description: "The Other Shore follows world-renowned swimmer, Diana Nyad, as she resurrects her thirty-year-old dream of swimming 103+ miles non-stop from Cuba to Florida without a shark cage.",
-
-    producer: "Ketchum Labs", 
-
-    project: "The Other Shore", 
-
-    type_of: "film",
-
-    posterframe: "http://www.ketchumlabs.com/thework/poster/film_tos.jpg",  
-
-    url: "http://www.ketchumlabs.com/thework/video/film_tos.mp4"
-
-  )
-
-  Video.create(
-
-    brand: "Fox",
-
-    description: "Chasing Spencer chronicles the fish out of water rookie Nascar car driver, Spencer Gallagher, as he makes his foray into the world of Nascar with little experience behind the wheel.",
-
-    producer: "Ketchum Labs", 
-
-    project: "Chasing Spencer", 
-
-    type_of: "television",
-
-    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_chasingspencer.jpg",  
-
-    url: "http://www.ketchumlabs.com/thework/video/tv_chasingspencer.mp4"
-
-  )
   Video.create(
 
     brand: "Fuel TV",
@@ -338,88 +424,6 @@ Video.delete_all
     url: "http://www.ketchumlabs.com/thework/video/tv_check12.mp4"
 
   )
-  Video.create(
 
-    brand: "Fuel TV",
 
-    description: "Pro snowboarder, Travis Parker, hits the great southwest in search of the lore of the mountain men.  On his way, he discovers that finding true wilderness these days is hard to come by.",
 
-    producer: "Patrick Weir", 
-
-    project: "Environmentally Challenged", 
-
-    type_of: "television",
-
-    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_envirochall.jpg",  
-
-    url: "http://www.ketchumlabs.com/thework/video/tv_envirochall.mp4"
-
-  )
-  Video.create(
-
-    brand: "Fuel TV",
-
-    description: "Comedian Chris Fairbanks takes to the stage for a half-hour of giggles for Fuel TV's first ever comedy series.",
-
-    producer: "Ketchum Labs", 
-
-    project: "Chris Fairbanks: Fairly Uncertain", 
-
-    type_of: "television",
-
-    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fairbankscomedy.jpg",  
-
-    url: "http://www.ketchumlabs.com/thework/video/tv_fairbankscomedy.mp4"
-
-  )
-  Video.create(
-
-    brand: "Fuel TV",
-
-    description: "In this episode, Fuel TV's marquee docu-series, Firsthand, chronicles Freestyle Motocross star, Kenny Bartram, as he competes in the FMX Triple Crown and heads to England to go head to head with in an endurance race with Travis Pastrana.",
-
-    producer: "Patrick Weir", 
-
-    project: "Firsthand: Kenny Bartram", 
-
-    type_of: "television",
-
-    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fh-kenny.jpg",  
-
-    url: "http://www.ketchumlabs.com/thework/video/tv_fh-kenny.mp4"
-
-  )
-  Video.create(
-
-    brand: "Fuel TV",
-
-    description: "In this episode, Fuel TV's marquee docu-series, Firsthand, chronicles veteran female pro surfer, Rochelle Ballard, as she struggles to stay afloat amongst the younger generation of female surfers.  Will this be her final year or can she dig deep and prove her worth for another couple years.",
-
-    producer: "Patrick Weir", 
-
-    project: "Firsthand: Rochelle Ballard", 
-
-    type_of: "television",
-
-    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fh_rochelle.jpg",  
-
-    url: "http://www.ketchumlabs.com/thework/video/tv_fh-rochelle.mp4"
-
-  )
-  Video.create(
-
-    brand: "Fuel TV",
-
-    description: "In this episode, Fuel TV's marquee docu-series, Firsthand, chronicles Peruvian female surfer, Sofia Mulanovich, as she goes down to the wire for the ASP Women's World Championship in Oahu, Hawaii.  After, she heads back to her homeland only discover she's become a national hero and celebrity overnight.",
-
-    producer: "Patrick Weir", 
-
-    project: "Firsthand: Sofia Mulanovich", 
-
-    type_of: "television",
-
-    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fh-sofia.jpg",  
-
-    url: "http://www.ketchumlabs.com/thework/video/tv_fh-sofia.mp4"
-
-  )

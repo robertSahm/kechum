@@ -6,8 +6,12 @@ class HomeController < ApplicationController
   def contact
   end
   
-  def work    
-    @filter = params[:q] || nil 
+  def work
+    if params[:q]    
+      @filter = ".#{params[:q]}" 
+    else
+      @filter = ".film, .television, .digital"
+    end
     # if params[:offset] == '8'
     #   @videos = Video.limit(8).offset(params[:offset])
     #   @back = 16

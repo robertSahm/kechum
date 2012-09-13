@@ -1,0 +1,7 @@
+<%  videos.each do |video| %>
+   <div class="posterframeCell">
+     <div class="itemCell"><%= image_tag video.posterframe  %></div>
+     <div class="clearBox <%= video.type_of %>"></div>
+     <div class="playButton"><%= link_to "#" , video_path(video.permalink) %></div>
+   </div>
+<% end %>

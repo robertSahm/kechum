@@ -22,6 +22,7 @@ capybara-*.html
 /vendor/bundle
 /log/*
 /tmp/*
+/doc/*
 .DS_Store
 
 /db/*.sqlite3

@@ -28,7 +28,9 @@ class VideosController < ApplicationController
     else
       @next = next_video.pop.permalink
     end
-    # we may need some cant find permalink screen      
+    # we may need some cant find permalink screen  
+    
+    @text_size = @video.project.size < 35 ? "textTitle" : "textTitleSmall"    
 
     respond_to do |format|
       format.html # show.html.erb

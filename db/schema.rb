@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120912015116) do
+ActiveRecord::Schema.define(:version => 20120913004723) do
 
   create_table "microposts", :force => true do |t|
     t.string   "content"
@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(:version => 20120912015116) do
     t.string   "posterframe"
     t.integer  "position"
     t.string   "producer"
+    t.string   "image"
   end
 
 end

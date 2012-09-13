@@ -18,7 +18,6 @@
 				<div class="digitalCheck checkMark"></div>
 			</h2>
 			
-			<!--! <h2><a href="#" data-filter="*">all</a></h2> -->
 		</div>
 	</div>
 
@@ -36,31 +35,13 @@
       <!-- Carousel items -->
       <div class="carousel-inner">
       <div class="active item">
-           <%  @videos.each do |video| %>
-            <div class="posterframeCell">
-              <div class="itemCell"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %></div>
-              <div class="clearBox <%= video.type_of %>"></div>
-              <div class="playButton"><a href="#"></a></div>
-            </div>
-          <% end %>
+          <%= render 'posterframeCell', :videos => @videos %>
       </div>
       <div class="item">
-           <%  @videos_left.each do |video| %>
-            <div class="posterframeCell">
-              <div class="itemCell"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %></div>
-              <div class="clearBox <%= video.type_of %>"></div>
-              <div class="playButton"><a href="#"></a></div>
-            </div>
-          <% end %>
+          <%= render 'posterframeCell', :videos => @videos_left %>
       </div>
       <div class="item">
-           <%  @videos_right.each do |video| %>
-            <div class="posterframeCell">
-              <div class="itemCell"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %></div>
-              <div class="clearBox <%= video.type_of %>"></div>
-              <div class="playButton"><a href="#"></a></div>
-            </div>
-          <% end %>
+          <%= render 'posterframeCell', :videos => @videos_right %>
       </div>
       </div>
     </div>

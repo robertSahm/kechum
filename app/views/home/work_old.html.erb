@@ -1,0 +1,71 @@
+
+
+
+<div class="workWrapper">
+	<div class="roundedNav"></div>
+	<div class="paperSort videoSelector"></div>
+	<div class="logoDots"></div>
+	<div class="checkBoxWrapper videoSelector">
+		<div id="filters">
+			<h2><a href="#" data-filter=".film">Film</a></h2>
+			<h2><a href="#" data-filter=".television">Television</a></h2>
+			<h2><a href="#" data-filter=".digital">Digital</a></h2>
+			<h2><a href="#" data-filter="*">all</a></h2>
+		</div>
+	</div>
+
+	<div class="videoBorder videoSelector"></div>
+  <% if @filter != 'film' %>
+  	<div class="paginateVideos">
+  		<h3><%= link_to "<===" , work_path(offset: @back, q: @filter), :class => "backButton" %>
+  			&nbsp;&nbsp;Page&nbsp;&nbsp;
+  			<%= link_to "    ===>" , work_path(offset: @forward, q: @filter), :class => "forwardButton" %>
+  		</h3>
+  	</div>
+  <% end %>
+
+	<div class="containerVideos">
+     <%  @videos.each do |video| %>
+      <div class="posterframeCell">
+        <div class="item"><%= link_to (image_tag (video.posterframe  )) , video_path(video.permalink) %></div>
+        <div class="clearBox <%= video.type_of %>"></div>
+       <div class="playButton"><%= image_tag 'playsmall' %></div>
+      </div>
+    <% end %>
+  </div>
+
+
+	<div class="navTextWrapper">
+    	<h2><%= link_to "the work", work_path %></h2>
+    	<h2><%= link_to "the team", team_path %></h2>
+    	<h2><%= link_to "contact", contact_path %></h2>
+    	<h2><%= link_to "client", client_path %></h2>
+  	</div>
+  	
+</div> <!--! End workWrapper -->
+
+<% if @filter %>
+<script>
+  $(function() {
+     var selector = ".<%= @filter %>";
+		$('.clearBox').css('z-index' , '200');		
+		$(selector).css('z-index', '100');
+		// if film television of digital is clicke
+		// insert q: @filter into href's backButton & forwardButton
+		
+  });
+</script>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+

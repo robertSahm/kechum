@@ -6,21 +6,32 @@ class HomeController < ApplicationController
   def contact
   end
   
-  def work    
-    @filter = params[:q] || nil 
-    if params[:offset] == '8'
-      @videos = Video.limit(8).offset(params[:offset])
-      @back = 16
-      @forward = nil
-    elsif params[:offset] == '16'
-      @videos = Video.limit(8).offset(params[:offset])
-      @back = nil
-      @forward = 8
+  def work
+    if params[:q]    
+      @filter = ".#{params[:q]}" 
     else
-      @videos  = Video.limit(8)
-      @back = 8
-      @forward = 16
-    end  
+      @filter = ".film, .television, .digital"
+    end
+    # if params[:offset] == '8'
+    #   @videos = Video.limit(8).offset(params[:offset])
+    #   @back = 16
+    #   @forward = nil
+    # elsif params[:offset] == '16'
+    #   @videos = Video.limit(8).offset(params[:offset])
+    #   @back = nil
+    #   @forward = 8
+    # else
+    #   @videos  = Video.limit(8)
+    #   @back = 8
+    #   @forward = 16
+    # end 
+    video_full    = Video.limit(24)
+    #  split videos up for the carousel - 8 in each frame
+    @videos       = video_full[0..7]
+    @videos_left  = video_full[8..15]
+    @videos_right = video_full[16..23]
+
+
   end
   
   def video
@@ -28,13 +39,3 @@ class HomeController < ApplicationController
   end
 
 end
-
-# when on work 
-  # back is offset 8
-  # forward is offset 16
-# when on work offset 8
-  # back is offset 16
-  #forward is no offset 
-# when on work offset 16
-  # back is no offset
-  # forward is offset 8  

@@ -10,7 +10,7 @@ class HomeController < ApplicationController
     if params[:q]    
       @filter = ".#{params[:q]}" 
     else
-      @filter = ".film, .television, .digital"
+      @filter = ".all"
     end
     # if params[:offset] == '8'
     #   @videos = Video.limit(8).offset(params[:offset])

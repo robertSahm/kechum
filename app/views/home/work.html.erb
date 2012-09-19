@@ -1,94 +1,39 @@
 <div class="workWrapper">
 	<div class="roundedNav"></div>
-	<div class="paperSort videoSelector"></div>
 	<div class="logoDots"></div>
-	<div class="checkBoxWrapper videoSelector">
-		<div id="filters">
-			<h2 class="filmFilter">
-			  <a href="#" data-filter=".film">Film</a>
-				<div class="filmBox checkBox"></div>
-				<div class="filmCheck checkMark"></div>
-			</h2>
-			<h2 class="televisionFilter">
-			  <a href="#" data-filter=".television">Television</a>
-        <div class="televisionBox checkBox"></div>
-        <div class="televisionCheck checkMark"></div>
-			</h2>
-			
-			<h2 class="digitalFilter">
-			  <a href="#" data-filter=".digital">Digital</a>
-				<div class="digitalBox checkBox"></div>
-				<div class="digitalCheck checkMark"></div>
-			</h2>			
-		</div>
-	</div>
 
-	<div class="videoBorder videoSelector"></div>
-  	<div class="paginateVideos">
-  		<h3>
-  			<!-- Carousel nav -->
-        <a class="backButton left" href="#myCarousel" data-slide="prev"><===</a>
-        &nbsp;&nbsp; Page &nbsp;&nbsp;
-        <a class="backButton right" href="#myCarousel" data-slide="next">===></a>
-  		</h3>
-  	</div>
-  <div class="containerVideos">
-    <div id="myCarousel" class="carousel slide">
-      <!-- Carousel items -->
-      <div class="carousel-inner">
-      <div class="active item">
-          <%= render 'posterframeCell', :videos => @videos %>
-      </div>
-      <div class="item">
-          <%= render 'posterframeCell', :videos => @videos_left %>
-      </div>
-      <div class="item">
-          <%= render 'posterframeCell', :videos => @videos_right %>
-      </div>
-      </div>
-    </div>
-  </div>
-
-
+ <%= render :partial => 'videoSelector' %>
 
 	<div class="navTextWrapper">
-    	<h2 class="navSelected"><%= link_to "the work", work_path %></h2>
+    	<h2  class="navSelected"><%= link_to "the work", work_path %></h2>
     	<h2><%= link_to "the team", team_path %></h2>
     	<h2><%= link_to "contact", contact_path %></h2>
     	<h2><%= link_to "client", client_path %></h2>
-  	</div>
+  </div>
   	
 </div> <!--! End workWrapper -->
 
 
+
 <script>
   $(function() {
-    var selector = "<%= @filter %>";
-    
-    $('.carousel').carousel('pause');
-		$('.clearBox').css('z-index' , '200');		
-		$(selector).css('z-index', '100');
-		alert('calling add chekmarks');
-		add_checkmarks(selector);
-		$(".checkMark").css('display', 'block');
-		// if film television of digital is clicke
-		// insert q: @filter into href's backButton & forwardButton		
-  });
-  
-  function add_checkmarks(selector) {
-    alert('add checkmarks');
-    if (selector == ".film") {
-      $(".filmCheck").css('display', 'block');
-    } elsif (selector == ".digital") {
-      $(".digitalCheck").css('display', 'block');
-    } elsif (selector == ".television") {
-      $(".televisionCheck").css('display', 'block');
+    var selector = "<%= @filter %>";    
+    $(selector + "Check").show(300);
+    if (selector == ".all") {
+      $('.allCheck').show(300);
     } else {
-      $(".checkMark").css('display', 'block');
-    }
-  };
+      $('.carousel').carousel('pause');
+		  $('.clearBox').css('z-index' , '200');		
+		  $(selector).css('z-index', '100');
+	  }
+    
+    // if film television of digital is clicke
+    // insert q: @filter into href's backButton & forwardButton   
+  });
+
 
 </script>
+
 
 
 

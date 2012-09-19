@@ -141,11 +141,14 @@ $(function() {
 	$('#filters a').click(function(){
      var selector = $(this).attr('data-filter');
 		$('.clearBox').css('z-index' , '200');		
-		if (selector == "*") {
+		$('.checkMark').hide(300);
+		
+		if (selector == ".all") {
 			$('.clearBox').css('z-index' , '100');
 		} else {
 			$(selector).css('z-index', '100');
 		}
+		$(this).siblings('.checkMark').show(300);
      return false;
    });
 });

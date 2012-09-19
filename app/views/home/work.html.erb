@@ -18,28 +18,19 @@
 <script>
   $(function() {
     var selector = "<%= @filter %>";    
-    $('.carousel').carousel('pause');
-		$('.clearBox').css('z-index' , '200');		
-		$(selector).css('z-index', '100');
-		alert('calling add chekmarks');
-		add_checkmarks(selector);
-		$(".checkMark").css('display', 'block');
-		// if film television of digital is clicke
-		// insert q: @filter into href's backButton & forwardButton		
-  });
-  
-  function add_checkmarks(selector) {
-    alert('add checkmarks');
-    if (selector == ".film") {
-      $(".filmCheck").css('display', 'block');
-    } elsif (selector == ".digital") {
-      $(".digitalCheck").css('display', 'block');
-    } elsif (selector == ".television") {
-      $(".televisionCheck").css('display', 'block');
+    $(selector + "Check").show(300);
+    if (selector == ".all") {
+      $('.allCheck').show(300);
     } else {
-      $(".checkMark").css('display', 'block');
-    }
-  };
+      $('.carousel').carousel('pause');
+		  $('.clearBox').css('z-index' , '200');		
+		  $(selector).css('z-index', '100');
+	  }
+    
+    // if film television of digital is clicke
+    // insert q: @filter into href's backButton & forwardButton   
+  });
+
 
 </script>
 

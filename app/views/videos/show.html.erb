@@ -2,67 +2,7 @@
 	<div class="roundedNav"></div>
 	<div class="logoDots"></div>
 
-	<div class="playerWrapper">
-		<div class="videoNav">
-			<h3 class='nextButton'><%= link_to "Next->", video_path(@next), :class => "backClick" %><br /><%= link_to "<-Back", video_path(@previous), :class => "backClick" %></h3>
-		</div>
-
-    <div class="closeButton">
-      <h3 class="closeX"><%= link_to "[X]", work_path %></h3>
-    </div>
-
-		<div class="videoInfo">
-  			<h3 class="title">
-  				<span class="whiteBackground">Project:</span>
-  			</h3>
-  			<h3 class="<%= @text_size %>">
-  				<span class="whiteBackground"><%= @video.project %></span>
-  			</h3>
-  			<h3 class="networkBrand">
-  				<span class="tanBackground">Network/Brand:</span>
-  			</h3>
-  			<h3 class="networkBrandText">
-  				<span class="tanBackground"><%= @video.brand %></span>
-  			</h3>
-  			<h3 class="type">
-  				<span class="tanBackground">Type:</span>
-  			</h3>
-  			<h3 class="typeText">
-  				<span class="tanBackground"><%= @video.type_of.capitalize %></span>
-  			</h3>
-  			<% if @video.director %>
-    			<h3 class="director">
-    				<span class="tanBackground">Director:</span>
-    			</h3>
-    			<h3 class="directorText">
-    				<span class="tanBackground"><%= @video.director %></span>
-    			</h3>
-  			<% end %>
-  			<% if @video.producer %>
-    			<h3 class="director">
-    				<span class="tanBackground">Producer:</span>
-    			</h3>
-    			<h3 class="directorText">
-    				<span class="tanBackground"><%= @video.producer %></span>
-    			</h3>
-  			<% end %>
-  	</div>
-  	
-    <div class="videoContainer">
-      <%= render 'video_legit'  %>
-    </div>
-  </div>
-
-	<h3 class="tabTitle">
-		<%= @video.type_of.capitalize %>
-	</h3>
-
-	<div class="playerLongInfo">
-		
-		<h3 class="descriptionText">
-      <%= @video.description %>		
-    </h3>
-	</div>
+	<%= render :partial => 'playerWrapper' %>
 
 	<div class="navTextWrapper">
     	<h2  class="navSelected"><%= link_to "the work", work_path %></h2>

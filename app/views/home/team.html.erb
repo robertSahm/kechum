@@ -8,18 +8,18 @@
 	<div class="teamNavText">
 		<h2>
 			<a href="#kechumBio" data-toggle="tab">
-				<span class="title colorLink">KETCHUM LABS</span>
+				<span class="title colorLink navSelected">KETCHUM LABS</span>
 			</a>
 		</h2>
 		<h2>
 			<a href="#kevinBio" data-toggle="tab">
-				<span class="boldCaps colorLink">&#x95; Kevin Abrams: </span>
+				<span class="boldCaps">&#x95; Kevin Abrams: </span>
 				Executive Producer
 			</a>
 		</h2>
 		<h2>
 			<a href="#patrickBio" data-toggle="tab">
-				<span class="boldCaps colorLink">
+				<span class="boldCaps">
 				&#x95; Patrick Weir: 
 				</span>
 				Executive Producer
@@ -27,7 +27,7 @@
 		</h2>
 		<h2>
 			<a href="#mauryBio" data-toggle="tab">
-				<span class="boldCaps colorLink">
+				<span class="boldCaps">
 				&#x95; Maury Gallagher: 
 				</span>
 				Partner
@@ -84,7 +84,7 @@
 $('.teamNavText h2 a').click(function (e) {
     e.preventDefault();
     $(this).tab('show');
-
+    highlightActive(this)
     //$('.tab-content h4').animate({
     //  opacity: '.3'
     //  }, 2000
@@ -94,9 +94,13 @@ $('.teamNavText h2 a').click(function (e) {
 $(function() {
    $('a[data-toggle="tab"]').on('show', function (e) {
    		$('.tab-content').toggle(700); 
-   		
     })
 });
+
+function highlightActive(activeItem) {
+    $('.teamNavText h2 a span').removeClass('colorLink'); 
+    $(activeItem).children("span:first").addClass('colorLink');
+};
 
 
 </script>

@@ -1,5 +1,5 @@
 class Video < ActiveRecord::Base
-  attr_accessible :brand, :description, :director, :permalink, :project, :type_of, :url, :posterframe, :producer
+  attr_accessible :brand, :description, :director, :permalink, :project, :type_of, :url, :posterframe, :producer, :image
 
   after_create :create_permalink
   

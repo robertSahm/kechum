@@ -1,4 +1,5 @@
 Video.delete_all
+
   
   Video.create(
 
@@ -13,6 +14,8 @@ Video.delete_all
     type_of: "digital",
 
     posterframe: "http://www.ketchumlabs.com/thework/poster/dig_addidas.jpg",  
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_addidas.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_addidas.mp4"
 
@@ -29,7 +32,9 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_projectx.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_projectx.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_projectx.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_projectx.mp4"
 
@@ -46,7 +51,9 @@ Video.delete_all
 
     type_of: "film",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/film_dynamiter.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/film_dynamiter.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/film_dynamiter.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/film_dynamiter.mp4"
 
@@ -64,7 +71,9 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_cheapskate.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_cheapskate.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_cheapskate.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_cheapskate.mp4"
 
@@ -81,7 +90,9 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_chasingspencer.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_chasingspencer.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/tv_chasingspencer.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/tv_chasingspencer.mp4"
 
@@ -98,7 +109,9 @@ Video.delete_all
 
     type_of: "film",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/film_tos.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/film_tos.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/film_tos.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/film_tos.mp4"
 
@@ -116,7 +129,9 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_dp.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_dp.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_dp.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_dp.mp4"
 
@@ -133,7 +148,9 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_envirochall.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_envirochall.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/tv_envirochall.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/tv_envirochall.mp4"
 
@@ -151,7 +168,9 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_filmaker-control.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_filmaker-control.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_filmaker-control.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_filmaker-control.mp4"
 
@@ -168,7 +187,9 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fh-kenny.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fh-kenny.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/tv_fh-kenny.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/tv_fh-kenny.mp4"
 
@@ -186,7 +207,9 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_filmaker-surfwise.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_filmaker-surfwise.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_filmaker-surfwise.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_filmaker-surfwise.mp4"
 
@@ -204,7 +227,9 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_foodbankPSA.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_foodbankPSA.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_foodbankPSA.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_foodbankPSA.mp4"
 
@@ -221,7 +246,9 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fh-rochelle.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fh-rochelle.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/tv_fh-rochelle.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/tv_fh-rochelle.mp4"
 
@@ -239,7 +266,9 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_psp.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_psp.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_psp.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_pspspot.mp4"
 
@@ -256,7 +285,9 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_scion.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_scion.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_scion.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_scion.mp4"
 
@@ -273,7 +304,9 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_shaunwhite.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_shaunwhite.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_shaunwhite.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_shaunwhite.mp4"
 
@@ -290,7 +323,9 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fh-sofia.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fh-sofia.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/tv_fh-sofia.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/tv_fh-sofia.mp4"
 
@@ -307,7 +342,9 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_skateshop.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_skateshop.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_skateshop.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_skateshop.mp4"
 
@@ -323,7 +360,9 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_smt.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_smt.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_smt.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_smt.mp4"
 
@@ -340,7 +379,9 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_snl.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_snl.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_snl.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_snl.mp4"
 
@@ -358,7 +399,9 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fairbankscomedy.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_fairbankscomedy.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/tv_fairbankscomedy.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/tv_fairbankscomedy.mp4"
 
@@ -375,7 +418,9 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_toyota.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_toyota.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_toyota.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_toyota.mp4"
 
@@ -392,7 +437,9 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_truth.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/dig_truth.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/dig_truth.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/dig_truth.mp4"
 
@@ -411,7 +458,9 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_check12.jpg",  
+    posterframe: "http://www.ketchumlabs.com/thework/poster/tv_check12.jpg",   
+
+    image: "http://www.ketchumlabs.com/thework/image/tv_check12.jpg",
 
     url: "http://www.ketchumlabs.com/thework/video/tv_check12.mp4"
 

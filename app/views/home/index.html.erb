@@ -15,14 +15,17 @@
 </div>
 
 <div class="hoverWrapper">
-  <div class="weatherHover hoverSlide rotate45"><%= link_to "", work_path %></div>
+  <div class="weatherHover hoverSlide rotate45"><a href="http://www.weather.com/weather/tenday/Ketchum+ID+83340:4:US" target="blank">
+  </a></div>
   <div class="contactHover  hoverSlide rotate45"><%= link_to "", contact_path %></div>
   <div class="teamHover hoverSlide rotate45"><%= link_to "", team_path %></div>
   <div class="clientHover hoverSlide rotate45"><%= link_to "", client_path %></div>
   <div class="filmHover hoverSlide rotate45"><%= link_to "", work_path(q: "film") %></div>
   <div class="televisionHover hoverSlide rotate45"><%= link_to "", work_path(q: "television") %></div>
   <div class="digitalHover hoverSlide rotate45"><%= link_to "", work_path( q: "digital") %></div>
-  <div class="yardsaleHover hoverSlide rotate45"><%= link_to "", work_path %></div>
+  <div class="yardsaleHover hoverSlide rotate45">
+    <a href="http://www.youtube.com/watch?v=bVhCefQL-fs" target="blank"></a>
+  </div>
 </div>
 
 <div class="fillBlocks">
@@ -58,7 +61,9 @@
     <a href="#"><%= image_tag "yardsaleBlock.png" %></a>
   </div>
   <div class="weatherBlock slideBlock">
-    <a href="#"><%= image_tag "weatherBlock.png" %></a>
+    <a>
+      <%= image_tag "weatherBlock.png" %>
+    </a>
   </div>
   <div class="contactBlock slideBlock">
     <a href="#"><%= image_tag "contactBlock.png" %></a>

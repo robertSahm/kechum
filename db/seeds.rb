@@ -13,11 +13,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_addidas.jpg",  
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_addidas.jpg",  
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_addidas.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_addidas.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_addidas.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_addidas.mp4"
 
   )
   Video.create(
@@ -32,11 +32,11 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_projectx.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_projectx.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_projectx.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_projectx.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_projectx.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_projectx.mp4"
 
   )
   Video.create(
@@ -51,11 +51,11 @@ Video.delete_all
 
     type_of: "film",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/film_dynamiter.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/film_dynamiter.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/film_dynamiter.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/film_dynamiter.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/film_dynamiter.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/film_dynamiter.mp4"
 
   )
 
@@ -71,11 +71,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_cheapskate.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_cheapskate.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_cheapskate.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_cheapskate.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_cheapskate.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_cheapskate.mp4"
 
   )
   Video.create(
@@ -90,11 +90,11 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/tv_chasingspencer.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/tv_chasingspencer.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/tv_chasingspencer.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/tv_chasingspencer.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/tv_chasingspencer.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/tv_chasingspencer.mp4"
 
   )
   Video.create(
@@ -109,11 +109,11 @@ Video.delete_all
 
     type_of: "film",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/film_tos.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/film_tos.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/film_tos.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/film_tos.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/film_tos.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/film_tos.mp4"
 
   )
 
@@ -129,11 +129,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_dp.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_dp.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_dp.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_dp.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_dp.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_dp.mp4"
 
   )
   Video.create(
@@ -148,11 +148,11 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/tv_envirochall.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/tv_envirochall.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/tv_envirochall.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/tv_envirochall.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/tv_envirochall.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/tv_envirochall.mp4"
 
   )
 
@@ -168,11 +168,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_filmaker-control.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_filmaker-control.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_filmaker-control.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_filmaker-control.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_filmaker-control.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_filmaker-control.mp4"
 
   )
   Video.create(
@@ -187,11 +187,11 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/tv_fh-kenny.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/tv_fh-kenny.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/tv_fh-kenny.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/tv_fh-kenny.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/tv_fh-kenny.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/tv_fh-kenny.mp4"
 
   )
 
@@ -207,11 +207,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_filmaker-surfwise.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_filmaker-surfwise.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_filmaker-surfwise.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_filmaker-surfwise.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_filmaker-surfwise.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_filmaker-surfwise.mp4"
 
   )
 
@@ -227,11 +227,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_foodbankPSA.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_foodbankPSA.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_foodbankPSA.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_foodbankPSA.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_foodbankPSA.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_foodbankPSA.mp4"
 
   )
   Video.create(
@@ -246,11 +246,11 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/tv_fh-rochelle.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/tv_fh-rochelle.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/tv_fh-rochelle.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/tv_fh-rochelle.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/tv_fh-rochelle.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/tv_fh-rochelle.mp4"
 
   )
 
@@ -266,11 +266,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_psp.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_psp.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_psp.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_psp.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_pspspot.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_pspspot.mp4"
 
   )
   Video.create(
@@ -285,11 +285,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_scion.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_scion.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_scion.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_scion.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_scion.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_scion.mp4"
 
   )
   Video.create(
@@ -304,11 +304,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_shaunwhite.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_shaunwhite.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_shaunwhite.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_shaunwhite.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_shaunwhite.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_shaunwhite.mp4"
 
   )
   Video.create(
@@ -323,11 +323,11 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/tv_fh-sofia.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/tv_fh-sofia.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/tv_fh-sofia.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/tv_fh-sofia.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/tv_fh-sofia.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/tv_fh-sofia.mp4"
 
   )
   Video.create(
@@ -342,11 +342,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_skateshop.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_skateshop.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_skateshop.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_skateshop.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_skateshop.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_skateshop.mp4"
 
   )
   Video.create(
@@ -360,11 +360,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_smt.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_smt.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_smt.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_smt.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_smt.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_smt.mp4"
 
   )
   Video.create(
@@ -379,11 +379,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_snl.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_snl.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_snl.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_snl.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_snl.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_snl.mp4"
 
   )
   
@@ -399,11 +399,11 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/tv_fairbankscomedy.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/tv_fairbankscomedy.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/tv_fairbankscomedy.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/tv_fairbankscomedy.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/tv_fairbankscomedy.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/tv_fairbankscomedy.mp4"
 
   )
   Video.create(
@@ -418,11 +418,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_toyota.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_toyota.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_toyota.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_toyota.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_toyota.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_toyota.mp4"
 
   )
   Video.create(
@@ -437,11 +437,11 @@ Video.delete_all
 
     type_of: "digital",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/dig_truth.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/dig_truth.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/dig_truth.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/dig_truth.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/dig_truth.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/dig_truth.mp4"
 
   )
 
@@ -458,11 +458,11 @@ Video.delete_all
 
     type_of: "television",
 
-    posterframe: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/poster/tv_check12.jpg",   
+    posterframe: "https://s3.amazonaws.com/ketchumlabs/thework/poster/tv_check12.jpg",   
 
-    image: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/image/tv_check12.jpg",
+    image: "https://s3.amazonaws.com/ketchumlabs/thework/image/tv_check12.jpg",
 
-    url: "http://ec2-107-20-179-175.compute-1.amazonaws.com/thework/video/tv_check12.mp4"
+    url: "https://s3.amazonaws.com/ketchumlabs/thework/video/tv_check12.mp4"
 
   )
 

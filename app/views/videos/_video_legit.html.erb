@@ -7,9 +7,14 @@
   jwplayer("container").setup({
     flashplayer: "/jwplayer/player.swf",
     file: "<%= @video.url %>",
+    autostart: true,
     height: 369,
     width: 652,
     image: "<%= @video.image %>",
     skin: "/skins/glow/glow.xml"
   });
+  // jwplayer('container').oncanplaythrough(function() { 
+  // 	alert('inside oncanplaythrough');
+  // 	this.play();
+  // });
 </script>

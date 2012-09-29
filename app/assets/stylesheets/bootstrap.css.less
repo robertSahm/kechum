@@ -268,30 +268,30 @@ Wb  YML.dML..d'  MM     YA.   ,A9 MM    MM MM       MM     8M   MM YM.    , YM. 
 
 
 
-                                                                                  
-/*                     ,,                                                           
-  .g8"""bgd        `7MM                      `7MMF'   `7MF'                       
-.dP'     `M          MM                        `MA     ,V                         
-dM'       ` ,pW"Wq.  MM  ,pW"Wq.`7Mb,od8        VM:   ,V ,6"Yb.  `7Mb,od8 ,pP"Ybd 
-MM         6W'   `Wb MM 6W'   `Wb MM' "'         MM.  M'8)   MM    MM' "' 8I   `" 
-MM.        8M     M8 MM 8M     M8 MM             `MM A'  ,pm9MM    MM     `YMMMa. 
-`Mb.     ,'YA.   ,A9 MM YA.   ,A9 MM              :MM;  8M   MM    MM     L.   I8 
-  `"bmmmd'  `Ybmd9'.JMML.`Ybmd9'.JMML.             VF   `Moo9^Yo..JMML.   M9mmmP' 
+                                            
+/*                     ,,                   
+  .g8"""bgd        `7MM                     
+.dP'     `M          MM                     
+dM'       ` ,pW"Wq.  MM  ,pW"Wq.`7Mb,od8    
+MM         6W'   `Wb MM 6W'   `Wb MM' "'    
+MM.        8M     M8 MM 8M     M8 MM        
+`Mb.     ,'YA.   ,A9 MM YA.   ,A9 MM        
+  `"bmmmd'  `Ybmd9'.JMML.`Ybmd9'.JMML.      
 */ 
 
 @blueText: #005A7E;
 @babyBlueText : #1ff;
 
 /*                                                                                                                                                                                                                                  ,,                
-MMP""MM""YMM                                                              `7MM                
-P'   MM   `7                                                                MM                
-     MM `7M'   `MF`7MMpdMAo.  ,pW"Wq.   .P"Ybmmm `7Mb,od8 ,6"Yb. `7MMpdMAo. MMpMMMb`7M'   `MF'
-     MM   VA   ,V   MM   `Wb 6W'   `Wb :MI  I8     MM' "'8)   MM   MM   `Wb MM    MM VA   ,V  
-     MM    VA ,V    MM    M8 8M     M8  WmmmP"     MM     ,pm9MM   MM    M8 MM    MM  VA ,V   
-     MM     VVV     MM   ,AP YA.   ,A9 8M          MM    8M   MM   MM   ,AP MM    MM   VVV    
-   .JMML.   ,V      MMbmmd'   `Ybmd9'   YMMMMMb  .JMML.  `Moo9^Yo. MMbmmd'.JMML  JMML. ,V     
-           ,V       MM                 6'     dP                   MM                 ,V      
-        OOb"      .JMML.               Ybmmmd'                   .JMML.            OOb"     
+MMP""MM""YMM                                                                          
+P'   MM   `7                                                                          
+     MM `7M'   `MF`7MMpdMAo.  ,pW"Wq.   .P"Ybmmm 
+     MM   VA   ,V   MM   `Wb 6W'   `Wb :MI  I8   
+     MM    VA ,V    MM    M8 8M     M8  WmmmP"   
+     MM     VVV     MM   ,AP YA.   ,A9 8M        
+   .JMML.   ,V      MMbmmd'   `Ybmd9'   YMMMMMb  
+           ,V       MM                 6'     dP 
+        OOb"      .JMML.               Ybmmmd'   
 */
 
 
@@ -377,17 +377,18 @@ body {
 }
 
 .texture {
-	//display: none;
-	min-height: 100%;
-	min-width: 400px;
-	min-width: 100%;
-	height: auto;
 	position: fixed;
+	height: 100%;
+	width: 100%;
 	top: 0;
 	left: 0;
 	background: url(texture.png); 
-	opacity: .35;
-	z-index: 70;
+	opacity: .4;
+	z-index: 101;
+
+	// img {
+	// 	position: absolute;
+	// }
 }
 
 @media screen and (max-width: 1200px) { /* Specific to this particular image */
@@ -725,20 +726,6 @@ body {
 	}
 }
 
-.shadows {
-
-	.shadowSlider {
-		position: absolute;
-	}
-
-	.digitalShadow {
-		//display: none;
-		top: 216px;
-		left: 540px;
-		z-index: 55;
-	}
-}
-
 .hoverImages {
 	//display: none;
 	width: 100%;
@@ -746,10 +733,9 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
+	//display: none;
 
 	.slideBlock {
-
-
 	}
 
 	//top row
@@ -842,15 +828,15 @@ body {
 		position: absolute;
 		width: 323px;
 		height: 285px;
-		top: 393px;
+		top: 392px;
 		left: 719px;
 		z-index: 60;
 	}
 
 	.weatherBlock {
 		position: absolute;
-		top: 393px;
-		left: -2px;
+		top: 394px;
+		left: 0px;
 		width: 323px;
 		height: 285px;
 		z-index: 29;

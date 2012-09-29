@@ -38,13 +38,13 @@ $(function() {
   $('.yardsaleHover').hover(function(){
     $('.wordYardsale, .arrowYardsale').stop(true, true).fadeIn({queue:false,duration:1000});
     $('.yardsaleBlock').stop(true, true).animate({
-      top:'-=29', 
-      left:'-=87'
+      top:'-=28', 
+      left:'-=85'
     },{queue:false,duration:300});
   }, function(){
     $('.yardsaleBlock').stop(true, true).animate({
-      top:'+=29', 
-      left: '+=87'
+      top:'+=28', 
+      left: '+=85'
     },{queue:false,duration:300});
     $('.wordYardsale, .arrowYardsale').fadeOut({queue:false,duration:300});
   });
@@ -55,13 +55,13 @@ $(function() {
   $('.weatherHover').hover(function(){
     $('.wordWeather, .arrowWeather').stop(true, true).fadeIn({queue:false,duration:1000});
     $('.weatherBlock').stop(true, true).animate({
-      top:'-=29', 
-      left:'-=86'
+      top:'-=28', 
+      left:'-=85'
     },{queue:false,duration:300});
   }, function(){
     $('.weatherBlock').stop(true, true).animate({
-      top:'+=29', 
-      left: '+=86'
+      top:'+=28', 
+      left: '+=85'
     },{queue:false,duration:300});
     $('.wordWeather, .arrowWeather').fadeOut({queue:false,duration:300});
   });

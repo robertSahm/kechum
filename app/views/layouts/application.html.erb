@@ -10,6 +10,8 @@
 
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
 
@@ -20,11 +22,12 @@
     </div>
     <div class="leftCornerWrapper">
       <div class="leftCorner"></div>
-      <div class="texture"></div>
+      
       <div class="diagramWrapper">
         <div class="diagram"></div>
       </div>
     </div>
+    <div class="texture"></div>
     <%= yield %>
     <div class="logoHomeLink"><%= link_to "", home_path %></div>
   </div>

@@ -4,7 +4,7 @@
   <title><%= PAGE_NAME %></title>
   <%= render 'layouts/shim' %>
   <%= stylesheet_link_tag    "application" %>
-  <%= stylesheet_link_tag    "mobile" if mobile_device? %>
+  <%#= stylesheet_link_tag    "mobile" if mobile_device? %>
 
   <%= javascript_include_tag "application" %>
 
@@ -29,13 +29,7 @@
     <%= yield %>
     <div class="logoHomeLink"><%= link_to "", home_path %></div>
   </div>
-    <!--! <p>
-      <% if mobile_device? %>
-        <%= link_to "Full Site", :mobile => 0 %>
-      <% else %>
-        <%= link_to "Mobile Site", :mobile => 1 %>
-      <% end %>
-    </p> -->
+
 
 </body>
 </html>

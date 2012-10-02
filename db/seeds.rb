@@ -80,7 +80,7 @@ Video.delete_all
   )
   Video.create(
 
-    brand: "Fox",
+    brand: "Pilot",
 
     description: "Chasing Spencer chronicles the fish out of water rookie Nascar car driver, Spencer Gallagher, as he makes his foray into the world of Nascar with little experience behind the wheel.",
 

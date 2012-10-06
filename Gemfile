@@ -4,7 +4,7 @@ gem 'rails', '3.2.3'
 gem 'aws-s3', :require => 'aws/s3' 
 
 group :production do
-	gem 'pg', '0.12.2'
+	gem 'pg', '~>0.12.2'
 	# gem 'thin'
 end
 
@@ -15,6 +15,7 @@ end
 
 # Gems used only for assets and not required
 # in production environments by default.
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'

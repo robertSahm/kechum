@@ -133,7 +133,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 3.2.1)
   jquery-rails
-  pg (= 0.12.2)
+  pg (~> 0.12.2)
   rails (= 3.2.3)
   sass-rails (~> 3.2.3)
   simple_form
